@@ -1,0 +1,142 @@
+// Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "02/10/2019 19:02:30"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          part1
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module part1_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg add_sub;
+reg [7:0] input_numbers;
+reg KEY1;
+reg KEY2;
+// wires                                               
+wire [7:0] output_led;
+
+// assign statements (if any)                          
+part1 i1 (
+// port map - connection between master ports and signals/registers   
+	.add_sub(add_sub),
+	.input_numbers(input_numbers),
+	.KEY1(KEY1),
+	.KEY2(KEY2),
+	.output_led(output_led)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// add_sub
+initial
+begin
+	add_sub = 1'b0;
+	add_sub = #10000 1'b1;
+	add_sub = #610000 1'b0;
+end 
+// input_numbers[ 7 ]
+initial
+begin
+	input_numbers[7] = 1'b0;
+	input_numbers[7] = #190000 1'b1;
+	input_numbers[7] = #90000 1'b0;
+end 
+// input_numbers[ 6 ]
+initial
+begin
+	input_numbers[6] = 1'b0;
+	input_numbers[6] = #20000 1'b1;
+	input_numbers[6] = #130000 1'b0;
+	input_numbers[6] = #40000 1'b1;
+	input_numbers[6] = #90000 1'b0;
+end 
+// input_numbers[ 5 ]
+initial
+begin
+	input_numbers[5] = 1'b0;
+	input_numbers[5] = #190000 1'b1;
+	input_numbers[5] = #90000 1'b0;
+end 
+// input_numbers[ 4 ]
+initial
+begin
+	input_numbers[4] = 1'b0;
+	input_numbers[4] = #20000 1'b1;
+	input_numbers[4] = #130000 1'b0;
+	input_numbers[4] = #40000 1'b1;
+	input_numbers[4] = #90000 1'b0;
+end 
+// input_numbers[ 3 ]
+initial
+begin
+	input_numbers[3] = 1'b0;
+	input_numbers[3] = #190000 1'b1;
+	input_numbers[3] = #90000 1'b0;
+end 
+// input_numbers[ 2 ]
+initial
+begin
+	input_numbers[2] = 1'b0;
+	input_numbers[2] = #20000 1'b1;
+	input_numbers[2] = #130000 1'b0;
+	input_numbers[2] = #40000 1'b1;
+	input_numbers[2] = #90000 1'b0;
+end 
+// input_numbers[ 1 ]
+initial
+begin
+	input_numbers[1] = 1'b0;
+	input_numbers[1] = #190000 1'b1;
+	input_numbers[1] = #90000 1'b0;
+end 
+// input_numbers[ 0 ]
+initial
+begin
+	input_numbers[0] = 1'b0;
+	input_numbers[0] = #20000 1'b1;
+	input_numbers[0] = #130000 1'b0;
+	input_numbers[0] = #40000 1'b1;
+	input_numbers[0] = #90000 1'b0;
+end 
+
+// KEY1
+initial
+begin
+	KEY1 = 1'b0;
+	KEY1 = #90000 1'b1;
+	KEY1 = #20000 1'b0;
+end 
+
+// KEY2
+initial
+begin
+	KEY2 = 1'b0;
+	KEY2 = #220000 1'b1;
+	KEY2 = #30000 1'b0;
+end 
+endmodule
+

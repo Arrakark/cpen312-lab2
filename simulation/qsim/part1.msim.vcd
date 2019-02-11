@@ -1,0 +1,396 @@
+$comment
+	File created using the following command:
+		vcd file part1.msim.vcd -direction
+$end
+$date
+	Sun Feb 10 19:02:36 2019
+$end
+$version
+	ModelSim Version 10.4d
+$end
+$timescale
+	1ps
+$end
+
+$scope module part1_vlg_vec_tst $end
+$var reg 1 ! add_sub $end
+$var reg 8 " input_numbers [7:0] $end
+$var reg 1 # KEY1 $end
+$var reg 1 $ KEY2 $end
+$var wire 1 % output_led [7] $end
+$var wire 1 & output_led [6] $end
+$var wire 1 ' output_led [5] $end
+$var wire 1 ( output_led [4] $end
+$var wire 1 ) output_led [3] $end
+$var wire 1 * output_led [2] $end
+$var wire 1 + output_led [1] $end
+$var wire 1 , output_led [0] $end
+
+$scope module i1 $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 / unknown $end
+$var tri1 1 0 devclrn $end
+$var tri1 1 1 devpor $end
+$var tri1 1 2 devoe $end
+$var wire 1 3 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 4 add_sub~input_o $end
+$var wire 1 5 KEY2~input_o $end
+$var wire 1 6 KEY2~inputCLKENA0_outclk $end
+$var wire 1 7 input_numbers[0]~input_o $end
+$var wire 1 8 KEY1~input_o $end
+$var wire 1 9 KEY1~inputCLKENA0_outclk $end
+$var wire 1 : adder_subtractor|Add0~34_cout $end
+$var wire 1 ; adder_subtractor|Add0~1_sumout $end
+$var wire 1 < input_numbers[1]~input_o $end
+$var wire 1 = LATCH2|stored_data[1]~feeder_combout $end
+$var wire 1 > adder_subtractor|Add0~2 $end
+$var wire 1 ? adder_subtractor|Add0~5_sumout $end
+$var wire 1 @ input_numbers[2]~input_o $end
+$var wire 1 A LATCH2|stored_data[2]~feeder_combout $end
+$var wire 1 B adder_subtractor|Add0~6 $end
+$var wire 1 C adder_subtractor|Add0~9_sumout $end
+$var wire 1 D input_numbers[3]~input_o $end
+$var wire 1 E LATCH2|stored_data[3]~feeder_combout $end
+$var wire 1 F adder_subtractor|Add0~10 $end
+$var wire 1 G adder_subtractor|Add0~13_sumout $end
+$var wire 1 H input_numbers[4]~input_o $end
+$var wire 1 I LATCH2|stored_data[4]~feeder_combout $end
+$var wire 1 J adder_subtractor|Add0~14 $end
+$var wire 1 K adder_subtractor|Add0~17_sumout $end
+$var wire 1 L input_numbers[5]~input_o $end
+$var wire 1 M LATCH2|stored_data[5]~feeder_combout $end
+$var wire 1 N adder_subtractor|Add0~18 $end
+$var wire 1 O adder_subtractor|Add0~21_sumout $end
+$var wire 1 P input_numbers[6]~input_o $end
+$var wire 1 Q LATCH2|stored_data[6]~feeder_combout $end
+$var wire 1 R adder_subtractor|Add0~22 $end
+$var wire 1 S adder_subtractor|Add0~25_sumout $end
+$var wire 1 T input_numbers[7]~input_o $end
+$var wire 1 U adder_subtractor|Add0~26 $end
+$var wire 1 V adder_subtractor|Add0~29_sumout $end
+$var wire 1 W LATCH2|stored_data [7] $end
+$var wire 1 X LATCH2|stored_data [6] $end
+$var wire 1 Y LATCH2|stored_data [5] $end
+$var wire 1 Z LATCH2|stored_data [4] $end
+$var wire 1 [ LATCH2|stored_data [3] $end
+$var wire 1 \ LATCH2|stored_data [2] $end
+$var wire 1 ] LATCH2|stored_data [1] $end
+$var wire 1 ^ LATCH2|stored_data [0] $end
+$var wire 1 _ LATCH1|stored_data [7] $end
+$var wire 1 ` LATCH1|stored_data [6] $end
+$var wire 1 a LATCH1|stored_data [5] $end
+$var wire 1 b LATCH1|stored_data [4] $end
+$var wire 1 c LATCH1|stored_data [3] $end
+$var wire 1 d LATCH1|stored_data [2] $end
+$var wire 1 e LATCH1|stored_data [1] $end
+$var wire 1 f LATCH1|stored_data [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b0 "
+0#
+0$
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0-
+1.
+x/
+10
+11
+12
+03
+04
+05
+06
+07
+08
+09
+1:
+0;
+0<
+0=
+1>
+0?
+0@
+0A
+1B
+0C
+0D
+0E
+1F
+0G
+0H
+0I
+1J
+0K
+0L
+0M
+1N
+0O
+0P
+0Q
+1R
+0S
+0T
+1U
+0V
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+$end
+#10000
+1!
+14
+0U
+0R
+0N
+0J
+0F
+0B
+0>
+0:
+1V
+1S
+1O
+1K
+1G
+1C
+1?
+1;
+1,
+1+
+1*
+1)
+1(
+1'
+1&
+1%
+0V
+0S
+0O
+0K
+0G
+0C
+0?
+0;
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+#20000
+b1000000 "
+b1010000 "
+b1010100 "
+b1010101 "
+17
+1@
+1H
+1P
+1Q
+1I
+1A
+#90000
+1#
+18
+19
+1`
+1b
+1d
+1f
+1;
+1C
+1K
+1S
+1&
+1(
+1*
+1,
+#110000
+0#
+08
+09
+#150000
+b10101 "
+b101 "
+b1 "
+b0 "
+07
+0@
+0H
+0P
+0Q
+0I
+0A
+#190000
+b10000000 "
+b10100000 "
+b10101000 "
+b10101010 "
+b11101010 "
+b11111010 "
+b11111110 "
+b11111111 "
+17
+1<
+1@
+1D
+1H
+1L
+1P
+1T
+1Q
+1M
+1I
+1E
+1A
+1=
+#220000
+1$
+15
+16
+1W
+1X
+1Y
+1Z
+1[
+1\
+1]
+1^
+1>
+1F
+1N
+1U
+0;
+1?
+0C
+1G
+0K
+1O
+0S
+1V
+1%
+0&
+1'
+0(
+1)
+0*
+1+
+0,
+1B
+1J
+1R
+0?
+0G
+0O
+0V
+0%
+0'
+0)
+0+
+1C
+1K
+1S
+1&
+1(
+1*
+#250000
+0$
+05
+06
+#280000
+b1111111 "
+b1011111 "
+b1010111 "
+b1010101 "
+b10101 "
+b101 "
+b1 "
+b0 "
+07
+0<
+0@
+0D
+0H
+0L
+0P
+0T
+0Q
+0M
+0I
+0E
+0A
+0=
+#620000
+0!
+04
+0R
+0J
+0B
+0>
+1:
+1V
+0S
+1O
+0K
+1G
+0C
+1?
+1;
+1,
+1+
+0*
+1)
+0(
+1'
+0&
+1%
+0U
+0N
+0F
+1>
+1S
+1K
+1C
+0?
+0;
+0,
+0+
+1*
+1(
+1&
+0V
+0O
+0G
+1?
+1+
+0)
+0'
+0%
+#1000000
