@@ -1,5 +1,5 @@
 EDA Netlist Writer report for part1
-Sun Feb 10 19:02:32 2019
+Sun Feb 10 19:47:42 2019
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Feb 10 19:02:32 2019 ;
+; EDA Netlist Writer Status ; Successful - Sun Feb 10 19:47:42 2019 ;
 ; Revision Name             ; part1                                 ;
 ; Top-level Entity Name     ; part1                                 ;
 ; Family                    ; Cyclone V                             ;
@@ -95,12 +95,12 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Sun Feb 10 19:02:30 2019
+    Info: Processing started: Sun Feb 10 19:47:40 2019
 Info: Command: quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/comsa/Documents/cpen321-lab2/simulation/qsim/ part1 -c part1
 Info (204019): Generated file part1.vo in folder "C:/Users/comsa/Documents/cpen321-lab2/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4928 megabytes
-    Info: Processing ended: Sun Feb 10 19:02:32 2019
+    Info: Processing ended: Sun Feb 10 19:47:42 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

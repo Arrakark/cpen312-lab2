@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/comsa/Documents/cpen321-lab2/simulation/qsim
 vpart1
-Z1 !s110 1549854155
+Z1 !s110 1549856863
 !i10b 1
 !s100 Zl^JaBnPQ?oPB0;G:d91@2
 IaB;l8M:bXmO?[i>3J8:_;2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1549854152
+w1549856862
 8part1.vo
 Fpart1.vo
 L0 32
@@ -23,7 +23,7 @@ Z3 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z4 !s108 1549854155.000000
+Z4 !s108 1549856863.000000
 !s107 part1.vo|
 !s90 -work|work|part1.vo|
 !i113 1
@@ -35,7 +35,7 @@ R1
 ITDXZYoNEd8MHC`>lQN[@20
 R2
 R0
-w1549854150
+w1549856860
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 30

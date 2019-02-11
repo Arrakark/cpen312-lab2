@@ -15,21 +15,28 @@ entity unsigned_adder_subtractor is
 		a		: in unsigned ((DATA_WIDTH-1) downto 0);
 		b		: in unsigned ((DATA_WIDTH-1) downto 0);
 		add_sub : in std_logic;
-		result	: out unsigned ((DATA_WIDTH-1) downto 0)
+		carry_in	: in std_logic;
+		result	: out unsigned ((DATA_WIDTH-1) downto 0);
+		carry_out	: out std_logic
 	);
 
 end entity;
 
 architecture rtl of unsigned_adder_subtractor is
+signal intermediate_sum : unsigned (DATA_WIDTH downto 0);
 begin
 
 	process(a,b,add_sub)
 	begin
 		-- add if "add_sub" is 1, else subtract
 		if (add_sub = '1') then
-			result <= a + b;
+			intermediate_sum <= ("0" & a) + ("0" & b) + ("0000000" & carry_in);
+			result <= intermediate_sum((DATA_WIDTH - 1) downto 0);
+			carry_out <= intermediate_sum(8);
 		else
-			result <= a - b;
+			intermediate_sum <= ("0" & a) - ("0" & b) - ("0000000" & carry_in);
+			result <= intermediate_sum((DATA_WIDTH - 1) downto 0);
+			carry_out <= intermediate_sum(8);
 		end if;
 	end process;
 
@@ -97,11 +104,10 @@ end entity;
 
 architecture project_structure of part1 is
 signal latched_1, latched_2		: unsigned (7 downto 0);
-
+signal carry_in		: std_logic := '0';
 begin
-
 LATCH1 : entity work.eight_bit_button_latch port map(KEY1, input_numbers, latched_1);
 LATCH2 : entity work.eight_bit_button_latch port map(KEY2, input_numbers, latched_2);
-adder_subtractor : entity work.unsigned_adder_subtractor port map(latched_1, latched_2, add_sub, output_led);
+adder_subtractor : entity work.unsigned_adder_subtractor port map(latched_1, latched_2, add_sub, carry_in, output_led);
 
 end project_structure;
