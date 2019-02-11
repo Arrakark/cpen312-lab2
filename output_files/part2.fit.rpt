@@ -1,6 +1,6 @@
 Fitter report for part2
-Sun Feb 10 22:33:59 2019
-Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Mon Feb 11 12:13:38 2019
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
 ---------------------
@@ -10,18 +10,18 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   2. Fitter Summary
   3. Fitter Settings
   4. Parallel Compilation
-  5. I/O Assignment Warnings
-  6. Fitter Netlist Optimizations
-  7. Incremental Compilation Preservation Summary
-  8. Incremental Compilation Partition Settings
-  9. Incremental Compilation Placement Preservation
- 10. Pin-Out File
- 11. Fitter Resource Usage Summary
- 12. Fitter Partition Statistics
- 13. Input Pins
- 14. Output Pins
- 15. I/O Bank Usage
- 16. All Package Pins
+  5. Fitter Netlist Optimizations
+  6. Incremental Compilation Preservation Summary
+  7. Incremental Compilation Partition Settings
+  8. Incremental Compilation Placement Preservation
+  9. Pin-Out File
+ 10. Fitter Resource Usage Summary
+ 11. Fitter Partition Statistics
+ 12. Input Pins
+ 13. Output Pins
+ 14. I/O Bank Usage
+ 15. All Package Pins
+ 16. I/O Assignment Warnings
  17. Fitter Resource Utilization by Entity
  18. Delay Chain Summary
  19. Pad To Core Delay Chain Fanout
@@ -41,18 +41,18 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera MegaCore Function License Agreement, or other 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
 applicable license agreement, including, without limitation, 
 that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
+devices manufactured by Intel and sold by Intel or its 
 authorized distributors.  Please refer to the applicable 
 agreement for further details.
 
@@ -61,8 +61,8 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Sun Feb 10 22:33:59 2019       ;
-; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Fitter Status                   ; Successful - Mon Feb 11 12:13:38 2019       ;
+; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                   ; part2                                       ;
 ; Top-level Entity Name           ; part2                                       ;
 ; Family                          ; Cyclone V                                   ;
@@ -143,77 +143,23 @@ agreement for further details.
 +----------------------------------------------------------------------------+---------------------+---------------------------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
-
-
 +------------------------------------------+
-; I/O Assignment Warnings                  ;
-+----------+-------------------------------+
-; Pin Name ; Reason                        ;
-+----------+-------------------------------+
-; add_sub  ; Incomplete set of assignments ;
-; hex0[0]  ; Incomplete set of assignments ;
-; hex0[1]  ; Incomplete set of assignments ;
-; hex0[2]  ; Incomplete set of assignments ;
-; hex0[3]  ; Incomplete set of assignments ;
-; hex0[4]  ; Incomplete set of assignments ;
-; hex0[5]  ; Incomplete set of assignments ;
-; hex0[6]  ; Incomplete set of assignments ;
-; hex1[0]  ; Incomplete set of assignments ;
-; hex1[1]  ; Incomplete set of assignments ;
-; hex1[2]  ; Incomplete set of assignments ;
-; hex1[3]  ; Incomplete set of assignments ;
-; hex1[4]  ; Incomplete set of assignments ;
-; hex1[5]  ; Incomplete set of assignments ;
-; hex1[6]  ; Incomplete set of assignments ;
-; hex2[0]  ; Incomplete set of assignments ;
-; hex2[1]  ; Incomplete set of assignments ;
-; hex2[2]  ; Incomplete set of assignments ;
-; hex2[3]  ; Incomplete set of assignments ;
-; hex2[4]  ; Incomplete set of assignments ;
-; hex2[5]  ; Incomplete set of assignments ;
-; hex2[6]  ; Incomplete set of assignments ;
-; hex3[0]  ; Incomplete set of assignments ;
-; hex3[1]  ; Incomplete set of assignments ;
-; hex3[2]  ; Incomplete set of assignments ;
-; hex3[3]  ; Incomplete set of assignments ;
-; hex3[4]  ; Incomplete set of assignments ;
-; hex3[5]  ; Incomplete set of assignments ;
-; hex3[6]  ; Incomplete set of assignments ;
-; hex4[0]  ; Incomplete set of assignments ;
-; hex4[1]  ; Incomplete set of assignments ;
-; hex4[2]  ; Incomplete set of assignments ;
-; hex4[3]  ; Incomplete set of assignments ;
-; hex4[4]  ; Incomplete set of assignments ;
-; hex4[5]  ; Incomplete set of assignments ;
-; hex4[6]  ; Incomplete set of assignments ;
-; hex5[0]  ; Incomplete set of assignments ;
-; hex5[1]  ; Incomplete set of assignments ;
-; hex5[2]  ; Incomplete set of assignments ;
-; hex5[3]  ; Incomplete set of assignments ;
-; hex5[4]  ; Incomplete set of assignments ;
-; hex5[5]  ; Incomplete set of assignments ;
-; hex5[6]  ; Incomplete set of assignments ;
-; LED      ; Incomplete set of assignments ;
-; lsd[0]   ; Incomplete set of assignments ;
-; KEY0     ; Incomplete set of assignments ;
-; lsd[1]   ; Incomplete set of assignments ;
-; lsd[2]   ; Incomplete set of assignments ;
-; lsd[3]   ; Incomplete set of assignments ;
-; msd[0]   ; Incomplete set of assignments ;
-; msd[1]   ; Incomplete set of assignments ;
-; msd[2]   ; Incomplete set of assignments ;
-; msd[3]   ; Incomplete set of assignments ;
-; KEY1     ; Incomplete set of assignments ;
-+----------+-------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processor 3            ;   0.3%      ;
+;     Processor 4            ;   0.2%      ;
++----------------------------+-------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -264,7 +210,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_files/part2.pin.
+The pin-out file can be found in C:/Users/Vlad/Documents/cpen321-lab2/output_files/part2.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -275,8 +221,8 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 15 / 18,480        ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 15                 ;       ;
 ;     [A] ALMs used in final placement [=a+b+c+d]             ; 21 / 18,480        ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 2                  ;       ;
-;         [b] ALMs used for LUT logic                         ; 13                 ;       ;
+;         [a] ALMs used for LUT logic and registers           ; 3                  ;       ;
+;         [b] ALMs used for LUT logic                         ; 12                 ;       ;
 ;         [c] ALMs used for registers                         ; 6                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
 ;     [B] Estimate of ALMs recoverable by dense packing       ; 6 / 18,480         ; < 1 % ;
@@ -288,8 +234,8 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 4 / 1,848          ; < 1 % ;
-;     -- Logic LABs                                           ; 4                  ;       ;
+; Total LABs:  partially or completely used                   ; 5 / 1,848          ; < 1 % ;
+;     -- Logic LABs                                           ; 5                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Combinational ALUT usage for logic                          ; 29                 ;       ;
@@ -298,7 +244,8 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ;     -- 5 input functions                                    ; 0                  ;       ;
 ;     -- 4 input functions                                    ; 28                 ;       ;
 ;     -- <=3 input functions                                  ; 1                  ;       ;
-; Combinational ALUT usage for route-throughs                 ; 6                  ;       ;
+; Combinational ALUT usage for route-throughs                 ; 4                  ;       ;
+;                                                             ;                    ;       ;
 ; Dedicated logic registers                                   ; 16                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
 ;         -- Primary logic registers                          ; 16 / 36,960        ; < 1 % ;
@@ -312,7 +259,6 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ;     -- Clock pins                                           ; 4 / 9              ; 44 %  ;
 ;     -- Dedicated input pins                                 ; 0 / 11             ; 0 %   ;
 ;                                                             ;                    ;       ;
-; Global signals                                              ; 2                  ;       ;
 ; M10K blocks                                                 ; 0 / 308            ; 0 %   ;
 ; Total MLAB memory bits                                      ; 0                  ;       ;
 ; Total block memory bits                                     ; 0 / 3,153,920      ; 0 %   ;
@@ -321,8 +267,9 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; Total DSP Blocks                                            ; 0 / 66             ; 0 %   ;
 ;                                                             ;                    ;       ;
 ; Fractional PLLs                                             ; 0 / 4              ; 0 %   ;
-; Global clocks                                               ; 2 / 16             ; 13 %  ;
-; Quadrant clocks                                             ; 0 / 88             ; 0 %   ;
+; Global signals                                              ; 2                  ;       ;
+;     -- Global clocks                                        ; 2 / 16             ; 13 %  ;
+;     -- Quadrant clocks                                      ; 0 / 88             ; 0 %   ;
 ; SERDES Transmitters                                         ; 0 / 68             ; 0 %   ;
 ; SERDES Receivers                                            ; 0 / 68             ; 0 %   ;
 ; JTAGs                                                       ; 0 / 1              ; 0 %   ;
@@ -331,12 +278,12 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; Remote update blocks                                        ; 0 / 1              ; 0 %   ;
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
-; Average interconnect usage (total/H/V)                      ; 0.1% / 0.1% / 0.1% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.5% / 0.5% / 0.6% ;       ;
+; Average interconnect usage (total/H/V)                      ; 0.0% / 0.1% / 0.0% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.5% / 0.5% / 0.4% ;       ;
 ; Maximum fan-out                                             ; 8                  ;       ;
 ; Highest non-global fan-out                                  ; 7                  ;       ;
-; Total fan-out                                               ; 234                ;       ;
-; Average fan-out                                             ; 1.45               ;       ;
+; Total fan-out                                               ; 232                ;       ;
+; Average fan-out                                             ; 1.46               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -348,8 +295,8 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 15 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 15                   ; 0                              ;
 ;     [A] ALMs used in final placement [=a+b+c+d]             ; 21 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 2                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 13                   ; 0                              ;
+;         [a] ALMs used for LUT logic and registers           ; 3                    ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 12                   ; 0                              ;
 ;         [c] ALMs used for registers                         ; 6                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
 ;     [B] Estimate of ALMs recoverable by dense packing       ; 6 / 18480 ( < 1 % )  ; 0 / 18480 ( 0 % )              ;
@@ -361,8 +308,8 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ;                                                             ;                      ;                                ;
 ; Difficulty packing design                                   ; Low                  ; Low                            ;
 ;                                                             ;                      ;                                ;
-; Total LABs:  partially or completely used                   ; 4 / 1848 ( < 1 % )   ; 0 / 1848 ( 0 % )               ;
-;     -- Logic LABs                                           ; 4                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 5 / 1848 ( < 1 % )   ; 0 / 1848 ( 0 % )               ;
+;     -- Logic LABs                                           ; 5                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Combinational ALUT usage for logic                          ; 29                   ; 0                              ;
@@ -371,7 +318,7 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ;     -- 5 input functions                                    ; 0                    ; 0                              ;
 ;     -- 4 input functions                                    ; 28                   ; 0                              ;
 ;     -- <=3 input functions                                  ; 1                    ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 6                    ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 4                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
 ;     -- 32-address deep                                      ; 0                    ; 0                              ;
@@ -399,7 +346,7 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 234                  ; 0                              ;
+;     -- Total Connections                                    ; 232                  ; 0                              ;
 ;     -- Registered Connections                               ; 112                  ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
@@ -452,48 +399,48 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; LED     ; Y3    ; 2A       ; 0            ; 18           ; 43           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex0[0] ; U21   ; 4A       ; 52           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex0[1] ; V21   ; 4A       ; 51           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex0[2] ; W22   ; 4A       ; 48           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex0[0] ; AA22  ; 4A       ; 46           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex0[1] ; Y21   ; 4A       ; 50           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex0[2] ; Y22   ; 4A       ; 48           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; hex0[3] ; W21   ; 4A       ; 50           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex0[4] ; Y22   ; 4A       ; 48           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex0[5] ; Y21   ; 4A       ; 50           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex0[6] ; AA22  ; 4A       ; 46           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex1[0] ; AA20  ; 4A       ; 44           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex1[1] ; AB20  ; 4A       ; 40           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex1[2] ; AA19  ; 4A       ; 44           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex0[4] ; W22   ; 4A       ; 48           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex0[5] ; V21   ; 4A       ; 51           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex0[6] ; U21   ; 4A       ; 52           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex1[0] ; U22   ; 4A       ; 51           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex1[1] ; AA17  ; 4A       ; 43           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex1[2] ; AB18  ; 4A       ; 38           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; hex1[3] ; AA18  ; 4A       ; 43           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex1[4] ; AB18  ; 4A       ; 38           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex1[5] ; AA17  ; 4A       ; 43           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex1[6] ; U22   ; 4A       ; 51           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex2[0] ; Y19   ; 4A       ; 48           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex2[1] ; AB17  ; 4A       ; 38           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex2[2] ; AA10  ; 3B       ; 22           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex1[4] ; AA19  ; 4A       ; 44           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex1[5] ; AB20  ; 4A       ; 40           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex1[6] ; AA20  ; 4A       ; 44           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex2[0] ; AB21  ; 4A       ; 40           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex2[1] ; AB22  ; 4A       ; 46           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex2[2] ; V14   ; 4A       ; 38           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; hex2[3] ; Y14   ; 4A       ; 36           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex2[4] ; V14   ; 4A       ; 38           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex2[5] ; AB22  ; 4A       ; 46           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex2[6] ; AB21  ; 4A       ; 40           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex3[0] ; Y16   ; 4A       ; 40           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex3[1] ; W16   ; 4A       ; 46           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex3[2] ; Y17   ; 4A       ; 40           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex2[4] ; AA10  ; 3B       ; 22           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex2[5] ; AB17  ; 4A       ; 38           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex2[6] ; Y19   ; 4A       ; 48           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex3[0] ; V19   ; 4A       ; 51           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex3[1] ; V18   ; 4A       ; 51           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex3[2] ; U17   ; 4A       ; 52           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; hex3[3] ; V16   ; 4A       ; 46           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex3[4] ; U17   ; 4A       ; 52           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex3[5] ; V18   ; 4A       ; 51           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex3[6] ; V19   ; 4A       ; 51           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex4[0] ; U20   ; 4A       ; 52           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex4[1] ; Y20   ; 4A       ; 48           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex4[2] ; V20   ; 4A       ; 44           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex3[4] ; Y17   ; 4A       ; 40           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex3[5] ; W16   ; 4A       ; 46           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex3[6] ; Y16   ; 4A       ; 40           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex4[0] ; P9    ; 3B       ; 29           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex4[1] ; Y15   ; 4A       ; 36           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex4[2] ; U15   ; 4A       ; 43           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; hex4[3] ; U16   ; 4A       ; 52           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex4[4] ; U15   ; 4A       ; 43           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex4[5] ; Y15   ; 4A       ; 36           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex4[6] ; P9    ; 3B       ; 29           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex5[0] ; N9    ; 3B       ; 29           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex5[1] ; M8    ; 3B       ; 22           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex5[2] ; T14   ; 4A       ; 43           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex4[4] ; V20   ; 4A       ; 44           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex4[5] ; Y20   ; 4A       ; 48           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex4[6] ; U20   ; 4A       ; 52           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex5[0] ; W19   ; 4A       ; 44           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex5[1] ; C2    ; 2A       ; 0            ; 21           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex5[2] ; C1    ; 2A       ; 0            ; 21           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; hex5[3] ; P14   ; 4A       ; 50           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex5[4] ; C1    ; 2A       ; 0            ; 21           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex5[5] ; C2    ; 2A       ; 0            ; 21           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; hex5[6] ; W19   ; 4A       ; 44           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex5[4] ; T14   ; 4A       ; 43           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex5[5] ; M8    ; 3B       ; 22           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; hex5[6] ; N9    ; 3B       ; 29           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -549,19 +496,19 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; AA7      ; 79         ; 3B       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
 ; AA8      ; 82         ; 3B       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
 ; AA9      ; 89         ; 3B       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
-; AA10     ; 87         ; 3B       ; hex2[2]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AA10     ; 87         ; 3B       ; hex2[4]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AA11     ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA12     ; 105        ; 3B       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
 ; AA13     ; 113        ; 4A       ; msd[3]                 ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AA14     ; 111        ; 4A       ; msd[2]                 ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AA15     ; 116        ; 4A       ; msd[0]                 ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AA16     ;            ; 4A       ; VCCIO4A                ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AA17     ; 127        ; 4A       ; hex1[5]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AA17     ; 127        ; 4A       ; hex1[1]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AA18     ; 129        ; 4A       ; hex1[3]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; AA19     ; 130        ; 4A       ; hex1[2]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; AA20     ; 132        ; 4A       ; hex1[0]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AA19     ; 130        ; 4A       ; hex1[4]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AA20     ; 132        ; 4A       ; hex1[6]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AA21     ;            ; 4A       ; VCCIO4A                ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AA22     ; 137        ; 4A       ; hex0[6]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AA22     ; 137        ; 4A       ; hex0[0]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AB1      ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB2      ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB3      ; 55         ; 3A       ; ^AS_DATA1, DATA1       ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
@@ -578,12 +525,12 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; AB14     ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB15     ; 114        ; 4A       ; msd[1]                 ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AB16     ;            ; 4A       ; VREFB4AN0              ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
-; AB17     ; 119        ; 4A       ; hex2[1]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; AB18     ; 121        ; 4A       ; hex1[4]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AB17     ; 119        ; 4A       ; hex2[5]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AB18     ; 121        ; 4A       ; hex1[2]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AB19     ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AB20     ; 122        ; 4A       ; hex1[1]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; AB21     ; 124        ; 4A       ; hex2[6]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; AB22     ; 135        ; 4A       ; hex2[5]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AB20     ; 122        ; 4A       ; hex1[5]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AB21     ; 124        ; 4A       ; hex2[0]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AB22     ; 135        ; 4A       ; hex2[1]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; B1       ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B2       ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B3       ;            ;          ; DNU                    ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -606,8 +553,8 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; B20      ;            ;          ; NC                     ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B21      ;            ;          ; NC                     ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B22      ;            ;          ; NC                     ;        ;              ;                     ; --           ;                 ; --       ; --           ;
-; C1       ; 16         ; 2A       ; hex5[4]                ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
-; C2       ; 18         ; 2A       ; hex5[5]                ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
+; C1       ; 16         ; 2A       ; hex5[2]                ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
+; C2       ; 18         ; 2A       ; hex5[1]                ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; C3       ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; C4       ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; C5       ; 292        ; 9A       ; ^GND                   ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -811,7 +758,7 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; M5       ; 48         ; 3A       ; #TDO                   ; output ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M6       ; 70         ; 3A       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
 ; M7       ; 72         ; 3A       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
-; M8       ; 86         ; 3B       ; hex5[1]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; M8       ; 86         ; 3B       ; hex5[5]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; M9       ; 88         ; 3B       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
 ; M10      ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M11      ;            ; --       ; VCC                    ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
@@ -834,7 +781,7 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; N6       ; 64         ; 3A       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
 ; N7       ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N8       ; 80         ; 3B       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
-; N9       ; 104        ; 3B       ; hex5[0]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; N9       ; 104        ; 3B       ; hex5[6]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; N10      ;            ; --       ; VCC                    ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; N11      ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N12      ;            ; --       ; VCC                    ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
@@ -856,7 +803,7 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; P6       ; 62         ; 3A       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
 ; P7       ; 73         ; 3A       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
 ; P8       ; 78         ; 3B       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
-; P9       ; 102        ; 3B       ; hex4[6]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; P9       ; 102        ; 3B       ; hex4[0]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; P10      ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; P11      ;            ; --       ; VCC                    ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; P12      ; 97         ; 3B       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
@@ -905,7 +852,7 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; T11      ;            ; 3B       ; VCCIO3B                ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; T12      ; 110        ; 4A       ; lsd[3]                 ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; T13      ; 112        ; 4A       ; lsd[2]                 ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; T14      ; 126        ; 4A       ; hex5[2]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; T14      ; 126        ; 4A       ; hex5[4]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; T15      ; 159        ; 5A       ; RESERVED_INPUT         ;        ;              ;                     ; Row I/O      ;                 ; no       ; Off          ;
 ; T16      ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; T17      ; 157        ; 5A       ; RESERVED_INPUT         ;        ;              ;                     ; Row I/O      ;                 ; no       ; Off          ;
@@ -928,14 +875,14 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; U12      ; 96         ; 3B       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
 ; U13      ; 109        ; 4A       ; lsd[0]                 ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; U14      ;            ; 4A       ; VCCIO4A                ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; U15      ; 128        ; 4A       ; hex4[4]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; U15      ; 128        ; 4A       ; hex4[2]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; U16      ; 150        ; 4A       ; hex4[3]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; U17      ; 152        ; 4A       ; hex3[4]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; U17      ; 152        ; 4A       ; hex3[2]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; U18      ;            ; --       ; VCCA_FPLL              ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; U19      ;            ; 4A       ; VCCIO4A                ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; U20      ; 153        ; 4A       ; hex4[0]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; U21      ; 151        ; 4A       ; hex0[0]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; U22      ; 146        ; 4A       ; hex1[6]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; U20      ; 153        ; 4A       ; hex4[6]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; U21      ; 151        ; 4A       ; hex0[6]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; U22      ; 146        ; 4A       ; hex1[0]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; V1       ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V2       ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V3       ; 56         ; 3A       ; ^DCLK                  ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
@@ -949,14 +896,14 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; V11      ;            ;          ; NC                     ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V12      ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V13      ; 107        ; 4A       ; lsd[1]                 ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; V14      ; 118        ; 4A       ; hex2[4]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; V14      ; 118        ; 4A       ; hex2[2]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; V15      ; 120        ; 4A       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
 ; V16      ; 134        ; 4A       ; hex3[3]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; V17      ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; V18      ; 149        ; 4A       ; hex3[5]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; V19      ; 147        ; 4A       ; hex3[6]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; V20      ; 131        ; 4A       ; hex4[2]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; V21      ; 148        ; 4A       ; hex0[1]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; V18      ; 149        ; 4A       ; hex3[1]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; V19      ; 147        ; 4A       ; hex3[0]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; V20      ; 131        ; 4A       ; hex4[4]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; V21      ; 148        ; 4A       ; hex0[5]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; V22      ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W1       ;            ; 2A       ; VREFB2AN0              ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W2       ; 28         ; 2A       ; RESERVED_INPUT         ;        ;              ;                     ; Row I/O      ;                 ; no       ; Off          ;
@@ -973,13 +920,13 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; W13      ;            ; --       ; VCC_AUX                ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W14      ;            ; 3B, 4A   ; VCCPD3B4A              ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W15      ;            ; 4A       ; VCCIO4A                ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; W16      ; 136        ; 4A       ; hex3[1]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; W16      ; 136        ; 4A       ; hex3[5]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; W17      ;            ; 3B, 4A   ; VCCPD3B4A              ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W18      ;            ; --       ; VCC_AUX                ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; W19      ; 133        ; 4A       ; hex5[6]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; W19      ; 133        ; 4A       ; hex5[0]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; W20      ;            ; 4A       ; VCCIO4A                ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W21      ; 145        ; 4A       ; hex0[3]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; W22      ; 140        ; 4A       ; hex0[2]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; W22      ; 140        ; 4A       ; hex0[4]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; Y1       ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y2       ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y3       ; 30         ; 2A       ; LED                    ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
@@ -994,16 +941,78 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; Y12      ;            ; 3B       ; VREFB3BN0              ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y13      ;            ; 3B       ; VCCIO3B                ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; Y14      ; 115        ; 4A       ; hex2[3]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; Y15      ; 117        ; 4A       ; hex4[5]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; Y16      ; 123        ; 4A       ; hex3[0]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; Y17      ; 125        ; 4A       ; hex3[2]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; Y15      ; 117        ; 4A       ; hex4[1]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; Y16      ; 123        ; 4A       ; hex3[6]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; Y17      ; 125        ; 4A       ; hex3[4]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; Y18      ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; Y19      ; 141        ; 4A       ; hex2[0]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; Y20      ; 139        ; 4A       ; hex4[1]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; Y21      ; 143        ; 4A       ; hex0[5]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; Y22      ; 138        ; 4A       ; hex0[4]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; Y19      ; 141        ; 4A       ; hex2[6]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; Y20      ; 139        ; 4A       ; hex4[5]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; Y21      ; 143        ; 4A       ; hex0[1]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; Y22      ; 138        ; 4A       ; hex0[2]                ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 +----------+------------+----------+------------------------+--------+--------------+---------------------+--------------+-----------------+----------+--------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++------------------------------------------+
+; I/O Assignment Warnings                  ;
++----------+-------------------------------+
+; Pin Name ; Reason                        ;
++----------+-------------------------------+
+; add_sub  ; Incomplete set of assignments ;
+; hex0[0]  ; Incomplete set of assignments ;
+; hex0[1]  ; Incomplete set of assignments ;
+; hex0[2]  ; Incomplete set of assignments ;
+; hex0[3]  ; Incomplete set of assignments ;
+; hex0[4]  ; Incomplete set of assignments ;
+; hex0[5]  ; Incomplete set of assignments ;
+; hex0[6]  ; Incomplete set of assignments ;
+; hex1[0]  ; Incomplete set of assignments ;
+; hex1[1]  ; Incomplete set of assignments ;
+; hex1[2]  ; Incomplete set of assignments ;
+; hex1[3]  ; Incomplete set of assignments ;
+; hex1[4]  ; Incomplete set of assignments ;
+; hex1[5]  ; Incomplete set of assignments ;
+; hex1[6]  ; Incomplete set of assignments ;
+; hex2[0]  ; Incomplete set of assignments ;
+; hex2[1]  ; Incomplete set of assignments ;
+; hex2[2]  ; Incomplete set of assignments ;
+; hex2[3]  ; Incomplete set of assignments ;
+; hex2[4]  ; Incomplete set of assignments ;
+; hex2[5]  ; Incomplete set of assignments ;
+; hex2[6]  ; Incomplete set of assignments ;
+; hex3[0]  ; Incomplete set of assignments ;
+; hex3[1]  ; Incomplete set of assignments ;
+; hex3[2]  ; Incomplete set of assignments ;
+; hex3[3]  ; Incomplete set of assignments ;
+; hex3[4]  ; Incomplete set of assignments ;
+; hex3[5]  ; Incomplete set of assignments ;
+; hex3[6]  ; Incomplete set of assignments ;
+; hex4[0]  ; Incomplete set of assignments ;
+; hex4[1]  ; Incomplete set of assignments ;
+; hex4[2]  ; Incomplete set of assignments ;
+; hex4[3]  ; Incomplete set of assignments ;
+; hex4[4]  ; Incomplete set of assignments ;
+; hex4[5]  ; Incomplete set of assignments ;
+; hex4[6]  ; Incomplete set of assignments ;
+; hex5[0]  ; Incomplete set of assignments ;
+; hex5[1]  ; Incomplete set of assignments ;
+; hex5[2]  ; Incomplete set of assignments ;
+; hex5[3]  ; Incomplete set of assignments ;
+; hex5[4]  ; Incomplete set of assignments ;
+; hex5[5]  ; Incomplete set of assignments ;
+; hex5[6]  ; Incomplete set of assignments ;
+; LED      ; Incomplete set of assignments ;
+; lsd[0]   ; Incomplete set of assignments ;
+; KEY0     ; Incomplete set of assignments ;
+; lsd[1]   ; Incomplete set of assignments ;
+; lsd[2]   ; Incomplete set of assignments ;
+; lsd[3]   ; Incomplete set of assignments ;
+; msd[0]   ; Incomplete set of assignments ;
+; msd[1]   ; Incomplete set of assignments ;
+; msd[2]   ; Incomplete set of assignments ;
+; msd[3]   ; Incomplete set of assignments ;
+; KEY1     ; Incomplete set of assignments ;
++----------+-------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1011,13 +1020,13 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +---------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-----------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node      ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Entity Name         ; Library Name ;
 +---------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-----------------------------------+---------------------+--------------+
-; |part2                          ; 14.5 (0.5)           ; 20.5 (0.5)                       ; 6.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 29 (1)              ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 54   ; 0            ; |part2                            ; part2               ; work         ;
-;    |BCDto7Seg:DISPLAY2|         ; 2.3 (2.3)            ; 3.5 (3.5)                        ; 1.2 (1.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY2         ; BCDto7Seg           ; work         ;
-;    |BCDto7Seg:DISPLAY3|         ; 2.3 (2.3)            ; 3.5 (3.5)                        ; 1.2 (1.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY3         ; BCDto7Seg           ; work         ;
+; |part2                          ; 14.5 (0.5)           ; 20.0 (0.5)                       ; 5.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 29 (1)              ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 54   ; 0            ; |part2                            ; part2               ; work         ;
+;    |BCDto7Seg:DISPLAY2|         ; 2.5 (2.5)            ; 3.5 (3.5)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY2         ; BCDto7Seg           ; work         ;
+;    |BCDto7Seg:DISPLAY3|         ; 2.5 (2.5)            ; 3.5 (3.5)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY3         ; BCDto7Seg           ; work         ;
 ;    |BCDto7Seg:DISPLAY4|         ; 2.3 (2.3)            ; 3.0 (3.0)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY4         ; BCDto7Seg           ; work         ;
-;    |BCDto7Seg:DISPLAY5|         ; 2.3 (2.3)            ; 3.0 (3.0)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY5         ; BCDto7Seg           ; work         ;
-;    |two_bit_bcd_latcher:LATCHA| ; 2.2 (2.2)            ; 3.5 (3.5)                        ; 1.3 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |part2|two_bit_bcd_latcher:LATCHA ; two_bit_bcd_latcher ; work         ;
-;    |two_bit_bcd_latcher:LATCHB| ; 2.5 (2.5)            ; 3.5 (3.5)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |part2|two_bit_bcd_latcher:LATCHB ; two_bit_bcd_latcher ; work         ;
+;    |BCDto7Seg:DISPLAY5|         ; 2.4 (2.4)            ; 2.8 (2.8)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY5         ; BCDto7Seg           ; work         ;
+;    |two_bit_bcd_latcher:LATCHA| ; 2.1 (2.1)            ; 3.5 (3.5)                        ; 1.4 (1.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |part2|two_bit_bcd_latcher:LATCHA ; two_bit_bcd_latcher ; work         ;
+;    |two_bit_bcd_latcher:LATCHB| ; 2.2 (2.2)            ; 3.3 (3.3)                        ; 1.1 (1.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |part2|two_bit_bcd_latcher:LATCHB ; two_bit_bcd_latcher ; work         ;
 +---------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-----------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1091,8 +1100,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------+-------------------+---------+
 ; add_sub                                                ;                   ;         ;
 ; lsd[0]                                                 ;                   ;         ;
+;      - two_bit_bcd_latcher:LATCHA|stored_lsd[0]        ; 0                 ; 0       ;
 ;      - two_bit_bcd_latcher:LATCHB|stored_lsd[0]        ; 0                 ; 0       ;
-;      - two_bit_bcd_latcher:LATCHA|stored_lsd[0]~feeder ; 0                 ; 0       ;
 ; KEY0                                                   ;                   ;         ;
 ;      - KEY0~inputCLKENA0                               ; 0                 ; 0       ;
 ; lsd[1]                                                 ;                   ;         ;
@@ -1102,19 +1111,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - two_bit_bcd_latcher:LATCHA|stored_lsd[2]        ; 0                 ; 0       ;
 ;      - two_bit_bcd_latcher:LATCHB|stored_lsd[2]        ; 0                 ; 0       ;
 ; lsd[3]                                                 ;                   ;         ;
-;      - two_bit_bcd_latcher:LATCHA|stored_lsd[3]        ; 0                 ; 0       ;
 ;      - two_bit_bcd_latcher:LATCHB|stored_lsd[3]        ; 0                 ; 0       ;
+;      - two_bit_bcd_latcher:LATCHA|stored_lsd[3]~feeder ; 0                 ; 0       ;
 ; msd[0]                                                 ;                   ;         ;
-;      - two_bit_bcd_latcher:LATCHB|stored_msd[0]~feeder ; 0                 ; 0       ;
-;      - two_bit_bcd_latcher:LATCHA|stored_msd[0]~feeder ; 0                 ; 0       ;
+;      - two_bit_bcd_latcher:LATCHA|stored_msd[0]        ; 0                 ; 0       ;
+;      - two_bit_bcd_latcher:LATCHB|stored_msd[0]        ; 0                 ; 0       ;
 ; msd[1]                                                 ;                   ;         ;
 ;      - two_bit_bcd_latcher:LATCHA|stored_msd[1]        ; 0                 ; 0       ;
-;      - two_bit_bcd_latcher:LATCHB|stored_msd[1]~feeder ; 0                 ; 0       ;
+;      - two_bit_bcd_latcher:LATCHB|stored_msd[1]        ; 0                 ; 0       ;
 ; msd[2]                                                 ;                   ;         ;
 ;      - two_bit_bcd_latcher:LATCHB|stored_msd[2]        ; 0                 ; 0       ;
 ;      - two_bit_bcd_latcher:LATCHA|stored_msd[2]~feeder ; 0                 ; 0       ;
 ; msd[3]                                                 ;                   ;         ;
-;      - two_bit_bcd_latcher:LATCHB|stored_msd[3]        ; 0                 ; 0       ;
+;      - two_bit_bcd_latcher:LATCHB|stored_msd[3]~feeder ; 0                 ; 0       ;
 ;      - two_bit_bcd_latcher:LATCHA|stored_msd[3]~feeder ; 0                 ; 0       ;
 ; KEY1                                                   ;                   ;         ;
 ;      - KEY1~inputCLKENA0                               ; 1                 ; 0       ;
@@ -1147,20 +1156,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Routing Resource Type        ; Usage                  ;
 +------------------------------+------------------------+
 ; Block interconnects          ; 44 / 140,056 ( < 1 % ) ;
-; C12 interconnects            ; 2 / 6,048 ( < 1 % )    ;
-; C2 interconnects             ; 20 / 54,648 ( < 1 % )  ;
-; C4 interconnects             ; 30 / 25,920 ( < 1 % )  ;
+; C12 interconnects            ; 0 / 6,048 ( 0 % )      ;
+; C2 interconnects             ; 21 / 54,648 ( < 1 % )  ;
+; C4 interconnects             ; 27 / 25,920 ( < 1 % )  ;
 ; DQS bus muxes                ; 0 / 17 ( 0 % )         ;
 ; DQS-18 I/O buses             ; 0 / 17 ( 0 % )         ;
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )         ;
-; Direct links                 ; 0 / 140,056 ( 0 % )    ;
+; Direct links                 ; 1 / 140,056 ( < 1 % )  ;
 ; Global clocks                ; 2 / 16 ( 13 % )        ;
-; Local interconnects          ; 12 / 36,960 ( < 1 % )  ;
+; Local interconnects          ; 11 / 36,960 ( < 1 % )  ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
 ; R14 interconnects            ; 11 / 5,984 ( < 1 % )   ;
-; R14/C12 interconnect drivers ; 13 / 9,504 ( < 1 % )   ;
-; R3 interconnects             ; 38 / 60,192 ( < 1 % )  ;
-; R6 interconnects             ; 29 / 127,072 ( < 1 % ) ;
+; R14/C12 interconnect drivers ; 11 / 9,504 ( < 1 % )   ;
+; R3 interconnects             ; 39 / 60,192 ( < 1 % )  ;
+; R6 interconnects             ; 30 / 127,072 ( < 1 % ) ;
 ; Spine clocks                 ; 2 / 120 ( 2 % )        ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )      ;
 +------------------------------+------------------------+
@@ -1328,7 +1337,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device 5CEBA4F23C7 for design "part2"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1361,7 +1371,7 @@ Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
@@ -1369,23 +1379,23 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.26 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.49 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:05
-Info (144001): Generated suppressed messages file C:/Users/comsa/Documents/cpen321-lab2/output_files/part2.fit.smsg
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:06
+Info (144001): Generated suppressed messages file C:/Users/Vlad/Documents/cpen321-lab2/output_files/part2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 6040 megabytes
-    Info: Processing ended: Sun Feb 10 22:34:00 2019
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:00:39
+    Info: Peak virtual memory: 6219 megabytes
+    Info: Processing ended: Mon Feb 11 12:13:39 2019
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:44
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/comsa/Documents/cpen321-lab2/output_files/part2.fit.smsg.
+The suppressed messages can be found in C:/Users/Vlad/Documents/cpen321-lab2/output_files/part2.fit.smsg.
 
 

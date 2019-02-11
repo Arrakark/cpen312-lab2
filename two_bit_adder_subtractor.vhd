@@ -11,7 +11,7 @@ entity two_bit_adder_subtractor is
 		msd2	: in  unsigned (3 downto 0);
 		lsd1	: in  unsigned (3 downto 0);
 		lsd2	: in  unsigned (3 downto 0);
-		add_sub : in std_logic := '1';
+		add_sub : in std_logic;
 
 		-- Output ports
 		overflow	: out std_logic;
@@ -31,18 +31,14 @@ begin
 
 process(msd1, lsd1, msd2, lsd2, lsdout, intermediate_sum)
 begin
-	num1 <= msd1 * "1010" + lsd1;
-	num2 <= msd2 * "1010" + lsd2;
+	num1 <= (msd1 * 10) + lsd1;
+	num2 <= (msd2 * 10) + lsd2;
 	if (add_sub = '1') then
 		intermediate_sum <= num1 + num2;
 	else
 		intermediate_sum <= num1 - num2;
 	end if;
-	intermediate_sum <= "0000" & (intermediate_sum mod "1010");
-	lsdout <= intermediate_sum(3 downto 0);
-	intermediate_sum <= (intermediate_sum - lsdout);
-	msdout <= intermediate_sum(3 downto 0);
-	overflow <= intermediate_sum(4);
+	
 end process;
 
 end arch_twobit;
