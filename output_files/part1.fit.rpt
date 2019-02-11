@@ -1,6 +1,6 @@
 Fitter report for part1
-Sun Feb 10 19:45:18 2019
-Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Mon Feb 11 11:13:27 2019
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
 ---------------------
@@ -10,18 +10,18 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   2. Fitter Summary
   3. Fitter Settings
   4. Parallel Compilation
-  5. I/O Assignment Warnings
-  6. Fitter Netlist Optimizations
-  7. Incremental Compilation Preservation Summary
-  8. Incremental Compilation Partition Settings
-  9. Incremental Compilation Placement Preservation
- 10. Pin-Out File
- 11. Fitter Resource Usage Summary
- 12. Fitter Partition Statistics
- 13. Input Pins
- 14. Output Pins
- 15. I/O Bank Usage
- 16. All Package Pins
+  5. Fitter Netlist Optimizations
+  6. Incremental Compilation Preservation Summary
+  7. Incremental Compilation Partition Settings
+  8. Incremental Compilation Placement Preservation
+  9. Pin-Out File
+ 10. Fitter Resource Usage Summary
+ 11. Fitter Partition Statistics
+ 12. Input Pins
+ 13. Output Pins
+ 14. I/O Bank Usage
+ 15. All Package Pins
+ 16. I/O Assignment Warnings
  17. Fitter Resource Utilization by Entity
  18. Delay Chain Summary
  19. Pad To Core Delay Chain Fanout
@@ -41,18 +41,18 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera MegaCore Function License Agreement, or other 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
 applicable license agreement, including, without limitation, 
 that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
+devices manufactured by Intel and sold by Intel or its 
 authorized distributors.  Please refer to the applicable 
 agreement for further details.
 
@@ -61,8 +61,8 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Sun Feb 10 19:45:18 2019       ;
-; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Fitter Status                   ; Successful - Mon Feb 11 11:13:27 2019       ;
+; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                   ; part1                                       ;
 ; Top-level Entity Name           ; part1                                       ;
 ; Family                          ; Cyclone V                                   ;
@@ -143,42 +143,22 @@ agreement for further details.
 +----------------------------------------------------------------------------+---------------------+---------------------------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
-
-
-+--------------------------------------------------+
-; I/O Assignment Warnings                          ;
-+------------------+-------------------------------+
-; Pin Name         ; Reason                        ;
-+------------------+-------------------------------+
-; output_led[0]    ; Incomplete set of assignments ;
-; output_led[1]    ; Incomplete set of assignments ;
-; output_led[2]    ; Incomplete set of assignments ;
-; output_led[3]    ; Incomplete set of assignments ;
-; output_led[4]    ; Incomplete set of assignments ;
-; output_led[5]    ; Incomplete set of assignments ;
-; output_led[6]    ; Incomplete set of assignments ;
-; output_led[7]    ; Incomplete set of assignments ;
-; add_sub          ; Incomplete set of assignments ;
-; input_numbers[0] ; Incomplete set of assignments ;
-; KEY2             ; Incomplete set of assignments ;
-; KEY1             ; Incomplete set of assignments ;
-; input_numbers[1] ; Incomplete set of assignments ;
-; input_numbers[2] ; Incomplete set of assignments ;
-; input_numbers[3] ; Incomplete set of assignments ;
-; input_numbers[4] ; Incomplete set of assignments ;
-; input_numbers[5] ; Incomplete set of assignments ;
-; input_numbers[6] ; Incomplete set of assignments ;
-; input_numbers[7] ; Incomplete set of assignments ;
-+------------------+-------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processors 3-4         ;   0.1%      ;
++----------------------------+-------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -229,7 +209,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_files/part1.pin.
+The pin-out file can be found in C:/Users/Vlad/Documents/cpen321-lab2/output_files/part1.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -263,7 +243,8 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ;     -- 5 input functions                                    ; 0                  ;       ;
 ;     -- 4 input functions                                    ; 0                  ;       ;
 ;     -- <=3 input functions                                  ; 10                 ;       ;
-; Combinational ALUT usage for route-throughs                 ; 6                  ;       ;
+; Combinational ALUT usage for route-throughs                 ; 5                  ;       ;
+;                                                             ;                    ;       ;
 ; Dedicated logic registers                                   ; 16                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
 ;         -- Primary logic registers                          ; 16 / 36,960        ; < 1 % ;
@@ -277,7 +258,6 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ;     -- Clock pins                                           ; 0 / 9              ; 0 %   ;
 ;     -- Dedicated input pins                                 ; 0 / 11             ; 0 %   ;
 ;                                                             ;                    ;       ;
-; Global signals                                              ; 2                  ;       ;
 ; M10K blocks                                                 ; 0 / 308            ; 0 %   ;
 ; Total MLAB memory bits                                      ; 0                  ;       ;
 ; Total block memory bits                                     ; 0 / 3,153,920      ; 0 %   ;
@@ -286,8 +266,9 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; Total DSP Blocks                                            ; 0 / 66             ; 0 %   ;
 ;                                                             ;                    ;       ;
 ; Fractional PLLs                                             ; 0 / 4              ; 0 %   ;
-; Global clocks                                               ; 2 / 16             ; 13 %  ;
-; Quadrant clocks                                             ; 0 / 88             ; 0 %   ;
+; Global signals                                              ; 2                  ;       ;
+;     -- Global clocks                                        ; 2 / 16             ; 13 %  ;
+;     -- Quadrant clocks                                      ; 0 / 88             ; 0 %   ;
 ; SERDES Transmitters                                         ; 0 / 68             ; 0 %   ;
 ; SERDES Receivers                                            ; 0 / 68             ; 0 %   ;
 ; JTAGs                                                       ; 0 / 1              ; 0 %   ;
@@ -296,11 +277,11 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; Remote update blocks                                        ; 0 / 1              ; 0 %   ;
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
-; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.1% ;       ;
+; Average interconnect usage (total/H/V)                      ; 0.1% / 0.0% / 0.1% ;       ;
 ; Peak interconnect usage (total/H/V)                         ; 0.3% / 0.3% / 0.6% ;       ;
 ; Maximum fan-out                                             ; 9                  ;       ;
 ; Highest non-global fan-out                                  ; 9                  ;       ;
-; Total fan-out                                               ; 100                ;       ;
+; Total fan-out                                               ; 99                 ;       ;
 ; Average fan-out                                             ; 1.39               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
@@ -336,7 +317,7 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ;     -- 5 input functions                                    ; 0                    ; 0                              ;
 ;     -- 4 input functions                                    ; 0                    ; 0                              ;
 ;     -- <=3 input functions                                  ; 10                   ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 6                    ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 5                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
 ;     -- 32-address deep                                      ; 0                    ; 0                              ;
@@ -364,7 +345,7 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 100                  ; 0                              ;
+;     -- Total Connections                                    ; 99                   ; 0                              ;
 ;     -- Registered Connections                               ; 16                   ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
@@ -398,7 +379,7 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; Name             ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; KEY1             ; W9    ; 3A       ; 11           ; 0            ; 34           ; 8                     ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; KEY2             ; M7    ; 3A       ; 14           ; 0            ; 0            ; 8                     ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; KEY2             ; U7    ; 3A       ; 10           ; 0            ; 91           ; 8                     ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; add_sub          ; AB12  ; 4A       ; 33           ; 0            ; 74           ; 9                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; input_numbers[0] ; U13   ; 4A       ; 33           ; 0            ; 40           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; input_numbers[1] ; V13   ; 4A       ; 33           ; 0            ; 57           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
@@ -740,7 +721,7 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; M4       ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M5       ; 48         ; 3A       ; #TDO                   ; output ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M6       ; 70         ; 3A       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
-; M7       ; 72         ; 3A       ; KEY2                   ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; M7       ; 72         ; 3A       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
 ; M8       ; 86         ; 3B       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
 ; M9       ; 88         ; 3B       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
 ; M10      ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -850,7 +831,7 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 ; U4       ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U5       ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U6       ; 67         ; 3A       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
-; U7       ; 59         ; 3A       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
+; U7       ; 59         ; 3A       ; KEY2                   ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; U8       ; 61         ; 3A       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
 ; U9       ;            ;          ; GND                    ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U10      ; 85         ; 3B       ; RESERVED_INPUT         ;        ;              ;                     ; Column I/O   ;                 ; no       ; Off          ;
@@ -936,6 +917,33 @@ The pin-out file can be found in C:/Users/comsa/Documents/cpen321-lab2/output_fi
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
 
++--------------------------------------------------+
+; I/O Assignment Warnings                          ;
++------------------+-------------------------------+
+; Pin Name         ; Reason                        ;
++------------------+-------------------------------+
+; output_led[0]    ; Incomplete set of assignments ;
+; output_led[1]    ; Incomplete set of assignments ;
+; output_led[2]    ; Incomplete set of assignments ;
+; output_led[3]    ; Incomplete set of assignments ;
+; output_led[4]    ; Incomplete set of assignments ;
+; output_led[5]    ; Incomplete set of assignments ;
+; output_led[6]    ; Incomplete set of assignments ;
+; output_led[7]    ; Incomplete set of assignments ;
+; add_sub          ; Incomplete set of assignments ;
+; input_numbers[0] ; Incomplete set of assignments ;
+; KEY2             ; Incomplete set of assignments ;
+; KEY1             ; Incomplete set of assignments ;
+; input_numbers[1] ; Incomplete set of assignments ;
+; input_numbers[2] ; Incomplete set of assignments ;
+; input_numbers[3] ; Incomplete set of assignments ;
+; input_numbers[4] ; Incomplete set of assignments ;
+; input_numbers[5] ; Incomplete set of assignments ;
+; input_numbers[6] ; Incomplete set of assignments ;
+; input_numbers[7] ; Incomplete set of assignments ;
++------------------+-------------------------------+
+
+
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                   ;
 +-------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------+---------------------------+--------------+
@@ -964,7 +972,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; output_led[7]    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; add_sub          ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; input_numbers[0] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; KEY2             ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY2             ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; KEY1             ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; input_numbers[1] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; input_numbers[2] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
@@ -995,7 +1003,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - eight_bit_button_latch:LATCH1|stored_data[0]        ; 0                 ; 0       ;
 ;      - eight_bit_button_latch:LATCH2|stored_data[0]        ; 0                 ; 0       ;
 ; KEY2                                                       ;                   ;         ;
-;      - KEY2~inputCLKENA0                                   ; 1                 ; 0       ;
+;      - KEY2~inputCLKENA0                                   ; 0                 ; 0       ;
 ; KEY1                                                       ;                   ;         ;
 ;      - KEY1~inputCLKENA0                                   ; 1                 ; 0       ;
 ; input_numbers[1]                                           ;                   ;         ;
@@ -1015,7 +1023,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - eight_bit_button_latch:LATCH2|stored_data[5]~feeder ; 1                 ; 0       ;
 ; input_numbers[6]                                           ;                   ;         ;
 ;      - eight_bit_button_latch:LATCH1|stored_data[6]        ; 1                 ; 0       ;
-;      - eight_bit_button_latch:LATCH2|stored_data[6]~feeder ; 1                 ; 0       ;
+;      - eight_bit_button_latch:LATCH2|stored_data[6]        ; 1                 ; 0       ;
 ; input_numbers[7]                                           ;                   ;         ;
 ;      - eight_bit_button_latch:LATCH1|stored_data[7]        ; 0                 ; 0       ;
 ;      - eight_bit_button_latch:LATCH2|stored_data[7]        ; 0                 ; 0       ;
@@ -1028,7 +1036,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name ; Location ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
 ; KEY1 ; PIN_W9   ; 8       ; Clock ; yes    ; Global Clock         ; GCLK7            ; --                        ;
-; KEY2 ; PIN_M7   ; 8       ; Clock ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; KEY2 ; PIN_U7   ; 8       ; Clock ; yes    ; Global Clock         ; GCLK4            ; --                        ;
 +------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1038,7 +1046,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 ; KEY1 ; PIN_W9   ; 8       ; Global Clock         ; GCLK7            ; --                        ;
-; KEY2 ; PIN_M7   ; 8       ; Global Clock         ; GCLK4            ; --                        ;
+; KEY2 ; PIN_U7   ; 8       ; Global Clock         ; GCLK4            ; --                        ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1061,7 +1069,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; R14 interconnects            ; 8 / 5,984 ( < 1 % )    ;
 ; R14/C12 interconnect drivers ; 12 / 9,504 ( < 1 % )   ;
 ; R3 interconnects             ; 18 / 60,192 ( < 1 % )  ;
-; R6 interconnects             ; 37 / 127,072 ( < 1 % ) ;
+; R6 interconnects             ; 38 / 127,072 ( < 1 % ) ;
 ; Spine clocks                 ; 2 / 120 ( 2 % )        ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )      ;
 +------------------------------+------------------------+
@@ -1194,7 +1202,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device 5CEBA4F23C7 for design "part1"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1209,7 +1218,7 @@ Info (11191): Automatically promoted 2 clocks (2 global)
         Info (12525): This signal is driven by core routing -- it may be moved during placement to reduce routing delays
 Warning (16406): 2 global input pin(s) will use non-dedicated clock routing
     Warning (16407): Source REFCLK I/O is not placed onto a dedicated REFCLK input pin for global clock driver KEY2~inputCLKENA0, placed at CLKCTRL_G6
-        Info (179012): Refclk input I/O pad KEY2 is placed onto PIN_M7
+        Info (179012): Refclk input I/O pad KEY2 is placed onto PIN_U7
     Warning (16407): Source REFCLK I/O is not placed onto a dedicated REFCLK input pin for global clock driver KEY1~inputCLKENA0, placed at CLKCTRL_G4
         Info (179012): Refclk input I/O pad KEY1 is placed onto PIN_W9
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
@@ -1221,37 +1230,37 @@ Info (332154): The derive_clock_uncertainty command did not apply clock uncertai
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:08
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:07
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X22_Y11 to location X32_Y22
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.11 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.25 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
-Info (144001): Generated suppressed messages file C:/Users/comsa/Documents/cpen321-lab2/output_files/part1.fit.smsg
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (144001): Generated suppressed messages file C:/Users/Vlad/Documents/cpen321-lab2/output_files/part1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 6040 megabytes
-    Info: Processing ended: Sun Feb 10 19:45:19 2019
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Peak virtual memory: 6259 megabytes
+    Info: Processing ended: Mon Feb 11 11:13:27 2019
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:36
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/comsa/Documents/cpen321-lab2/output_files/part1.fit.smsg.
+The suppressed messages can be found in C:/Users/Vlad/Documents/cpen321-lab2/output_files/part1.fit.smsg.
 
 

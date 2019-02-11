@@ -8,7 +8,7 @@ TNS   : -7.304
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY2'
 Slack : -0.538
-TNS   : -6.567
+TNS   : -6.992
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY1'
 Slack : -0.538
@@ -16,22 +16,22 @@ TNS   : -6.692
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY2'
 Slack : -0.538
-TNS   : -6.419
+TNS   : -6.661
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY1'
 Slack : -0.315
 TNS   : -2.661
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY2'
-Slack : -0.277
-TNS   : -2.287
+Slack : -0.314
+TNS   : -2.661
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY1'
 Slack : -0.293
 TNS   : -2.464
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY2'
-Slack : -0.260
-TNS   : -2.140
+Slack : -0.291
+TNS   : -2.454
 
 ------------------------------------------------------------

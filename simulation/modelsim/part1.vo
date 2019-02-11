@@ -1,23 +1,23 @@
-// Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
-// Your use of Altera Corporation's design tools, logic functions 
+// Copyright (C) 2016  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
 // and other software and tools, and its AMPP partner logic 
 // functions, and any output files from any of the foregoing 
 // (including device programming or simulation files), and any 
 // associated documentation or information are expressly subject 
-// to the terms and conditions of the Altera Program License 
-// Subscription Agreement, the Altera Quartus Prime License Agreement,
-// the Altera MegaCore Function License Agreement, or other 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
 // applicable license agreement, including, without limitation, 
 // that your use is for the sole purpose of programming logic 
-// devices manufactured by Altera and sold by Altera or its 
+// devices manufactured by Intel and sold by Intel or its 
 // authorized distributors.  Please refer to the applicable 
 // agreement for further details.
 
 // VENDOR "Altera"
 // PROGRAM "Quartus Prime"
-// VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition"
+// VERSION "Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition"
 
-// DATE "02/10/2019 19:45:38"
+// DATE "02/11/2019 11:13:47"
 
 // 
 // Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -52,7 +52,7 @@ output 	[7:0] output_led;
 // output_led[7]	=>  Location: PIN_U1,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // add_sub	=>  Location: PIN_AB12,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // input_numbers[0]	=>  Location: PIN_U13,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// KEY2	=>  Location: PIN_M7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// KEY2	=>  Location: PIN_U7,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // KEY1	=>  Location: PIN_W9,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // input_numbers[1]	=>  Location: PIN_V13,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // input_numbers[2]	=>  Location: PIN_T13,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -104,7 +104,6 @@ wire \LATCH2|stored_data[5]~feeder_combout ;
 wire \adder_subtractor|Add0~18 ;
 wire \adder_subtractor|Add0~21_sumout ;
 wire \input_numbers[6]~input_o ;
-wire \LATCH2|stored_data[6]~feeder_combout ;
 wire \adder_subtractor|Add0~22 ;
 wire \adder_subtractor|Add0~25_sumout ;
 wire \input_numbers[7]~input_o ;
@@ -253,7 +252,7 @@ defparam \add_sub~input .bus_hold = "false";
 defparam \add_sub~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X14_Y0_N1
+// Location: IOIBUF_X10_Y0_N92
 cyclonev_io_ibuf \KEY2~input (
 	.i(KEY2),
 	.ibar(gnd),
@@ -412,7 +411,7 @@ defparam \input_numbers[1]~input .bus_hold = "false";
 defparam \input_numbers[1]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X31_Y15_N9
+// Location: LABCELL_X31_Y15_N6
 cyclonev_lcell_comb \LATCH2|stored_data[1]~feeder (
 // Equation(s):
 // \LATCH2|stored_data[1]~feeder_combout  = ( \input_numbers[1]~input_o  )
@@ -436,7 +435,7 @@ defparam \LATCH2|stored_data[1]~feeder .lut_mask = 64'h00000000FFFFFFFF;
 defparam \LATCH2|stored_data[1]~feeder .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X31_Y15_N11
+// Location: FF_X31_Y15_N8
 dffeas \LATCH2|stored_data[1] (
 	.clk(\KEY2~inputCLKENA0_outclk ),
 	.d(\LATCH2|stored_data[1]~feeder_combout ),
@@ -608,7 +607,7 @@ defparam \input_numbers[3]~input .bus_hold = "false";
 defparam \input_numbers[3]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X31_Y15_N15
+// Location: LABCELL_X31_Y15_N12
 cyclonev_lcell_comb \LATCH2|stored_data[3]~feeder (
 // Equation(s):
 // \LATCH2|stored_data[3]~feeder_combout  = ( \input_numbers[3]~input_o  )
@@ -632,7 +631,7 @@ defparam \LATCH2|stored_data[3]~feeder .lut_mask = 64'h00000000FFFFFFFF;
 defparam \LATCH2|stored_data[3]~feeder .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X31_Y15_N17
+// Location: FF_X31_Y15_N14
 dffeas \LATCH2|stored_data[3] (
 	.clk(\KEY2~inputCLKENA0_outclk ),
 	.d(\LATCH2|stored_data[3]~feeder_combout ),
@@ -706,7 +705,7 @@ defparam \input_numbers[4]~input .bus_hold = "false";
 defparam \input_numbers[4]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X31_Y15_N18
+// Location: LABCELL_X31_Y15_N21
 cyclonev_lcell_comb \LATCH2|stored_data[4]~feeder (
 // Equation(s):
 // \LATCH2|stored_data[4]~feeder_combout  = ( \input_numbers[4]~input_o  )
@@ -730,7 +729,7 @@ defparam \LATCH2|stored_data[4]~feeder .lut_mask = 64'h00000000FFFFFFFF;
 defparam \LATCH2|stored_data[4]~feeder .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X31_Y15_N19
+// Location: FF_X31_Y15_N22
 dffeas \LATCH2|stored_data[4] (
 	.clk(\KEY2~inputCLKENA0_outclk ),
 	.d(\LATCH2|stored_data[4]~feeder_combout ),
@@ -804,7 +803,26 @@ defparam \input_numbers[5]~input .bus_hold = "false";
 defparam \input_numbers[5]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X31_Y15_N21
+// Location: FF_X31_Y15_N50
+dffeas \LATCH1|stored_data[5] (
+	.clk(\KEY1~inputCLKENA0_outclk ),
+	.d(gnd),
+	.asdata(\input_numbers[5]~input_o ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\LATCH1|stored_data [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \LATCH1|stored_data[5] .is_wysiwyg = "true";
+defparam \LATCH1|stored_data[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X31_Y15_N15
 cyclonev_lcell_comb \LATCH2|stored_data[5]~feeder (
 // Equation(s):
 // \LATCH2|stored_data[5]~feeder_combout  = ( \input_numbers[5]~input_o  )
@@ -828,7 +846,7 @@ defparam \LATCH2|stored_data[5]~feeder .lut_mask = 64'h00000000FFFFFFFF;
 defparam \LATCH2|stored_data[5]~feeder .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X31_Y15_N23
+// Location: FF_X31_Y15_N17
 dffeas \LATCH2|stored_data[5] (
 	.clk(\KEY2~inputCLKENA0_outclk ),
 	.d(\LATCH2|stored_data[5]~feeder_combout ),
@@ -847,25 +865,6 @@ defparam \LATCH2|stored_data[5] .is_wysiwyg = "true";
 defparam \LATCH2|stored_data[5] .power_up = "low";
 // synopsys translate_on
 
-// Location: FF_X31_Y15_N50
-dffeas \LATCH1|stored_data[5] (
-	.clk(\KEY1~inputCLKENA0_outclk ),
-	.d(gnd),
-	.asdata(\input_numbers[5]~input_o ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(vcc),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\LATCH1|stored_data [5]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \LATCH1|stored_data[5] .is_wysiwyg = "true";
-defparam \LATCH1|stored_data[5] .power_up = "low";
-// synopsys translate_on
-
 // Location: LABCELL_X31_Y15_N48
 cyclonev_lcell_comb \adder_subtractor|Add0~21 (
 // Equation(s):
@@ -874,10 +873,10 @@ cyclonev_lcell_comb \adder_subtractor|Add0~21 (
 
 	.dataa(!\add_sub~input_o ),
 	.datab(gnd),
-	.datac(!\LATCH2|stored_data [5]),
+	.datac(gnd),
 	.datad(!\LATCH1|stored_data [5]),
 	.datae(gnd),
-	.dataf(gnd),
+	.dataf(!\LATCH2|stored_data [5]),
 	.datag(gnd),
 	.cin(\adder_subtractor|Add0~18 ),
 	.sharein(gnd),
@@ -887,7 +886,7 @@ cyclonev_lcell_comb \adder_subtractor|Add0~21 (
 	.shareout());
 // synopsys translate_off
 defparam \adder_subtractor|Add0~21 .extended_lut = "off";
-defparam \adder_subtractor|Add0~21 .lut_mask = 64'h00005A5A000000FF;
+defparam \adder_subtractor|Add0~21 .lut_mask = 64'h000055AA000000FF;
 defparam \adder_subtractor|Add0~21 .shared_arith = "off";
 // synopsys translate_on
 
@@ -902,39 +901,15 @@ defparam \input_numbers[6]~input .bus_hold = "false";
 defparam \input_numbers[6]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X31_Y15_N12
-cyclonev_lcell_comb \LATCH2|stored_data[6]~feeder (
-// Equation(s):
-// \LATCH2|stored_data[6]~feeder_combout  = ( \input_numbers[6]~input_o  )
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(gnd),
-	.datae(gnd),
-	.dataf(!\input_numbers[6]~input_o ),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\LATCH2|stored_data[6]~feeder_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \LATCH2|stored_data[6]~feeder .extended_lut = "off";
-defparam \LATCH2|stored_data[6]~feeder .lut_mask = 64'h00000000FFFFFFFF;
-defparam \LATCH2|stored_data[6]~feeder .shared_arith = "off";
-// synopsys translate_on
-
-// Location: FF_X31_Y15_N14
+// Location: FF_X31_Y15_N11
 dffeas \LATCH2|stored_data[6] (
 	.clk(\KEY2~inputCLKENA0_outclk ),
-	.d(\LATCH2|stored_data[6]~feeder_combout ),
-	.asdata(vcc),
+	.d(gnd),
+	.asdata(\input_numbers[6]~input_o ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
-	.sload(gnd),
+	.sload(vcc),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -1000,7 +975,7 @@ defparam \input_numbers[7]~input .bus_hold = "false";
 defparam \input_numbers[7]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: FF_X31_Y15_N8
+// Location: FF_X31_Y15_N20
 dffeas \LATCH2|stored_data[7] (
 	.clk(\KEY2~inputCLKENA0_outclk ),
 	.d(gnd),
@@ -1043,8 +1018,8 @@ cyclonev_lcell_comb \adder_subtractor|Add0~29 (
 // Equation(s):
 // \adder_subtractor|Add0~29_sumout  = SUM(( \LATCH1|stored_data [7] ) + ( !\LATCH2|stored_data [7] $ (\add_sub~input_o ) ) + ( \adder_subtractor|Add0~26  ))
 
-	.dataa(gnd),
-	.datab(!\LATCH2|stored_data [7]),
+	.dataa(!\LATCH2|stored_data [7]),
+	.datab(gnd),
 	.datac(!\add_sub~input_o ),
 	.datad(!\LATCH1|stored_data [7]),
 	.datae(gnd),
@@ -1058,7 +1033,7 @@ cyclonev_lcell_comb \adder_subtractor|Add0~29 (
 	.shareout());
 // synopsys translate_off
 defparam \adder_subtractor|Add0~29 .extended_lut = "off";
-defparam \adder_subtractor|Add0~29 .lut_mask = 64'h00003C3C000000FF;
+defparam \adder_subtractor|Add0~29 .lut_mask = 64'h00005A5A000000FF;
 defparam \adder_subtractor|Add0~29 .shared_arith = "off";
 // synopsys translate_on
 
