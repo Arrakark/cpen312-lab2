@@ -1,6 +1,6 @@
 Analysis & Synthesis report for part2
-Mon Feb 11 12:13:07 2019
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Mon Feb 11 22:02:24 2019
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
 ---------------------
@@ -14,27 +14,30 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Parameter Settings for Inferred Entity Instance: two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod0
+ 10. Parameter Settings for Inferred Entity Instance: two_bit_adder_subtractor:adder_subtractor|lpm_divide:Div0
+ 11. Parameter Settings for Inferred Entity Instance: two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod1
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
 applicable license agreement, including, without limitation, 
 that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
+devices manufactured by Altera and sold by Altera or its 
 authorized distributors.  Please refer to the applicable 
 agreement for further details.
 
@@ -43,8 +46,8 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Feb 11 12:13:07 2019       ;
-; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Analysis & Synthesis Status     ; Successful - Mon Feb 11 22:02:24 2019       ;
+; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                   ; part2                                       ;
 ; Top-level Entity Name           ; part2                                       ;
 ; Family                          ; Cyclone V                                   ;
@@ -78,7 +81,7 @@ agreement for further details.
 ; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
 ; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
 ; Preserve fewer node names                                                       ; On                 ; On                 ;
-; OpenCore Plus hardware evaluation                                               ; Enable             ; Enable             ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
 ; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                        ; Auto               ; Auto               ;
@@ -145,79 +148,103 @@ agreement for further details.
 ; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
 ; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
 ; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
 ; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                             ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; part2.vhd                        ; yes             ; User VHDL File  ; C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd                    ;         ;
-; twobcdlatcher.vhd                ; yes             ; User VHDL File  ; C:/Users/Vlad/Documents/cpen321-lab2/twobcdlatcher.vhd            ;         ;
-; bcdtodisplay.vhd                 ; yes             ; User VHDL File  ; C:/Users/Vlad/Documents/cpen321-lab2/bcdtodisplay.vhd             ;         ;
-; two_bit_adder_subtractor.vhd     ; yes             ; User VHDL File  ; C:/Users/Vlad/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
+; part2.vhd                        ; yes             ; User VHDL File               ; C:/Users/comsa/Documents/cpen321-lab2/part2.vhd                         ;         ;
+; twobcdlatcher.vhd                ; yes             ; User VHDL File               ; C:/Users/comsa/Documents/cpen321-lab2/twobcdlatcher.vhd                 ;         ;
+; bcdtodisplay.vhd                 ; yes             ; User VHDL File               ; C:/Users/comsa/Documents/cpen321-lab2/bcdtodisplay.vhd                  ;         ;
+; two_bit_adder_subtractor.vhd     ; yes             ; User VHDL File               ; C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd      ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal160.inc                   ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/aglobal160.inc      ;         ;
+; db/lpm_divide_c2m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/comsa/Documents/cpen321-lab2/db/lpm_divide_c2m.tdf             ;         ;
+; db/sign_div_unsign_fkh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/comsa/Documents/cpen321-lab2/db/sign_div_unsign_fkh.tdf        ;         ;
+; db/alt_u_div_4te.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/comsa/Documents/cpen321-lab2/db/alt_u_div_4te.tdf              ;         ;
+; db/lpm_divide_5am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/comsa/Documents/cpen321-lab2/db/lpm_divide_5am.tdf             ;         ;
+; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/comsa/Documents/cpen321-lab2/db/sign_div_unsign_bkh.tdf        ;         ;
+; db/alt_u_div_sse.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/comsa/Documents/cpen321-lab2/db/alt_u_div_sse.tdf              ;         ;
+; db/lpm_divide_42m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/comsa/Documents/cpen321-lab2/db/lpm_divide_42m.tdf             ;         ;
+; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/comsa/Documents/cpen321-lab2/db/sign_div_unsign_7kh.tdf        ;         ;
+; db/alt_u_div_kse.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/comsa/Documents/cpen321-lab2/db/alt_u_div_kse.tdf              ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 17         ;
-;                                             ;            ;
-; Combinational ALUT usage for logic          ; 28         ;
-;     -- 7 input functions                    ; 0          ;
-;     -- 6 input functions                    ; 0          ;
-;     -- 5 input functions                    ; 0          ;
-;     -- 4 input functions                    ; 28         ;
-;     -- <=3 input functions                  ; 0          ;
-;                                             ;            ;
-; Dedicated logic registers                   ; 16         ;
-;                                             ;            ;
-; I/O pins                                    ; 54         ;
-;                                             ;            ;
-; Total DSP Blocks                            ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; KEY0~input ;
-; Maximum fan-out                             ; 8          ;
-; Total fan-out                               ; 226        ;
-; Average fan-out                             ; 1.49       ;
-+---------------------------------------------+------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                                                                    ;
++---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                                                                            ;
++---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 106                                                                                                                                              ;
+;                                             ;                                                                                                                                                  ;
+; Combinational ALUT usage for logic          ; 205                                                                                                                                              ;
+;     -- 7 input functions                    ; 0                                                                                                                                                ;
+;     -- 6 input functions                    ; 1                                                                                                                                                ;
+;     -- 5 input functions                    ; 2                                                                                                                                                ;
+;     -- 4 input functions                    ; 69                                                                                                                                               ;
+;     -- <=3 input functions                  ; 133                                                                                                                                              ;
+;                                             ;                                                                                                                                                  ;
+; Dedicated logic registers                   ; 16                                                                                                                                               ;
+;                                             ;                                                                                                                                                  ;
+; I/O pins                                    ; 54                                                                                                                                               ;
+;                                             ;                                                                                                                                                  ;
+; Total DSP Blocks                            ; 0                                                                                                                                                ;
+;                                             ;                                                                                                                                                  ;
+; Maximum fan-out node                        ; two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod0|lpm_divide_c2m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_4te:divider|op_6~1 ;
+; Maximum fan-out                             ; 15                                                                                                                                               ;
+; Total fan-out                               ; 769                                                                                                                                              ;
+; Average fan-out                             ; 2.34                                                                                                                                             ;
++---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                               ;
-+---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Entity Name         ; Library Name ;
-+---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+---------------------+--------------+
-; |part2                          ; 28 (0)              ; 16 (0)                    ; 0                 ; 0          ; 54   ; 0            ; |part2                            ; part2               ; work         ;
-;    |BCDto7Seg:DISPLAY2|         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY2         ; BCDto7Seg           ; work         ;
-;    |BCDto7Seg:DISPLAY3|         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY3         ; BCDto7Seg           ; work         ;
-;    |BCDto7Seg:DISPLAY4|         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY4         ; BCDto7Seg           ; work         ;
-;    |BCDto7Seg:DISPLAY5|         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY5         ; BCDto7Seg           ; work         ;
-;    |two_bit_bcd_latcher:LATCHA| ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_bcd_latcher:LATCHA ; two_bit_bcd_latcher ; work         ;
-;    |two_bit_bcd_latcher:LATCHB| ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_bcd_latcher:LATCHB ; two_bit_bcd_latcher ; work         ;
-+---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+---------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                   ;
++------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
+; Compilation Hierarchy Node                     ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                              ; Entity Name              ; Library Name ;
++------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
+; |part2                                         ; 205 (0)           ; 16 (0)       ; 0                 ; 0          ; 54   ; 0            ; |part2                                                                                                                                           ; part2                    ; work         ;
+;    |BCDto7Seg:DISPLAY0|                        ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY0                                                                                                                        ; BCDto7Seg                ; work         ;
+;    |BCDto7Seg:DISPLAY1|                        ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY1                                                                                                                        ; BCDto7Seg                ; work         ;
+;    |BCDto7Seg:DISPLAY2|                        ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY2                                                                                                                        ; BCDto7Seg                ; work         ;
+;    |BCDto7Seg:DISPLAY3|                        ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY3                                                                                                                        ; BCDto7Seg                ; work         ;
+;    |BCDto7Seg:DISPLAY4|                        ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY4                                                                                                                        ; BCDto7Seg                ; work         ;
+;    |BCDto7Seg:DISPLAY5|                        ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|BCDto7Seg:DISPLAY5                                                                                                                        ; BCDto7Seg                ; work         ;
+;    |two_bit_adder_subtractor:adder_subtractor| ; 163 (36)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_adder_subtractor:adder_subtractor                                                                                                 ; two_bit_adder_subtractor ; work         ;
+;       |lpm_divide:Div0|                        ; 49 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_adder_subtractor:adder_subtractor|lpm_divide:Div0                                                                                 ; lpm_divide               ; work         ;
+;          |lpm_divide_5am:auto_generated|       ; 49 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_adder_subtractor:adder_subtractor|lpm_divide:Div0|lpm_divide_5am:auto_generated                                                   ; lpm_divide_5am           ; work         ;
+;             |sign_div_unsign_bkh:divider|      ; 49 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_adder_subtractor:adder_subtractor|lpm_divide:Div0|lpm_divide_5am:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh      ; work         ;
+;                |alt_u_div_sse:divider|         ; 49 (49)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_adder_subtractor:adder_subtractor|lpm_divide:Div0|lpm_divide_5am:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider ; alt_u_div_sse            ; work         ;
+;       |lpm_divide:Mod0|                        ; 73 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod0                                                                                 ; lpm_divide               ; work         ;
+;          |lpm_divide_c2m:auto_generated|       ; 73 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod0|lpm_divide_c2m:auto_generated                                                   ; lpm_divide_c2m           ; work         ;
+;             |sign_div_unsign_fkh:divider|      ; 73 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod0|lpm_divide_c2m:auto_generated|sign_div_unsign_fkh:divider                       ; sign_div_unsign_fkh      ; work         ;
+;                |alt_u_div_4te:divider|         ; 73 (73)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod0|lpm_divide_c2m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_4te:divider ; alt_u_div_4te            ; work         ;
+;       |lpm_divide:Mod1|                        ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod1                                                                                 ; lpm_divide               ; work         ;
+;          |lpm_divide_42m:auto_generated|       ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod1|lpm_divide_42m:auto_generated                                                   ; lpm_divide_42m           ; work         ;
+;             |sign_div_unsign_7kh:divider|      ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod1|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh      ; work         ;
+;                |alt_u_div_kse:divider|         ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod1|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse            ; work         ;
+;    |two_bit_bcd_latcher:LATCHA|                ; 0 (0)             ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_bcd_latcher:LATCHA                                                                                                                ; two_bit_bcd_latcher      ; work         ;
+;    |two_bit_bcd_latcher:LATCHB|                ; 0 (0)             ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |part2|two_bit_bcd_latcher:LATCHB                                                                                                                ; two_bit_bcd_latcher      ; work         ;
++------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -236,6 +263,75 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod0 ;
++------------------------+----------------+------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                             ;
++------------------------+----------------+------------------------------------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                                          ;
+; LPM_WIDTHD             ; 8              ; Untyped                                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                          ;
+; CBXI_PARAMETER         ; lpm_divide_c2m ; Untyped                                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                   ;
++------------------------+----------------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: two_bit_adder_subtractor:adder_subtractor|lpm_divide:Div0 ;
++------------------------+----------------+------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                             ;
++------------------------+----------------+------------------------------------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                                          ;
+; LPM_WIDTHD             ; 4              ; Untyped                                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                          ;
+; CBXI_PARAMETER         ; lpm_divide_5am ; Untyped                                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                   ;
++------------------------+----------------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod1 ;
++------------------------+----------------+------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                             ;
++------------------------+----------------+------------------------------------------------------------------+
+; LPM_WIDTHN             ; 4              ; Untyped                                                          ;
+; LPM_WIDTHD             ; 4              ; Untyped                                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                          ;
+; CBXI_PARAMETER         ; lpm_divide_42m ; Untyped                                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                   ;
++------------------------+----------------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -243,15 +339,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 16                          ;
 ;     plain             ; 16                          ;
-; arriav_lcell_comb     ; 34                          ;
-;     normal            ; 34                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 4                           ;
-;         4 data inputs ; 28                          ;
+; arriav_lcell_comb     ; 212                         ;
+;     arith             ; 85                          ;
+;         0 data inputs ; 18                          ;
+;         1 data inputs ; 11                          ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 34                          ;
+;         4 data inputs ; 14                          ;
+;     normal            ; 104                         ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 19                          ;
+;         4 data inputs ; 51                          ;
+;         5 data inputs ; 2                           ;
+;         6 data inputs ; 1                           ;
+;     shared            ; 23                          ;
+;         0 data inputs ; 3                           ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 4                           ;
 ; boundary_port         ; 54                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.20                        ;
+; Max LUT depth         ; 25.20                       ;
+; Average LUT depth     ; 20.79                       ;
 +-----------------------+-----------------------------+
 
 
@@ -260,7 +371,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -269,66 +380,87 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Mon Feb 11 12:12:50 2019
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Mon Feb 11 22:02:05 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off part2 -c part2
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file part2.vhd
-    Info (12022): Found design unit 1: part2-part2arch File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 25
-    Info (12023): Found entity 1: part2 File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 6
+    Info (12022): Found design unit 1: part2-part2arch File: C:/Users/comsa/Documents/cpen321-lab2/part2.vhd Line: 25
+    Info (12023): Found entity 1: part2 File: C:/Users/comsa/Documents/cpen321-lab2/part2.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file twobcdlatcher.vhd
-    Info (12022): Found design unit 1: two_bit_bcd_latcher-functionality File: C:/Users/Vlad/Documents/cpen321-lab2/twobcdlatcher.vhd Line: 19
-    Info (12023): Found entity 1: two_bit_bcd_latcher File: C:/Users/Vlad/Documents/cpen321-lab2/twobcdlatcher.vhd Line: 6
+    Info (12022): Found design unit 1: two_bit_bcd_latcher-functionality File: C:/Users/comsa/Documents/cpen321-lab2/twobcdlatcher.vhd Line: 19
+    Info (12023): Found entity 1: two_bit_bcd_latcher File: C:/Users/comsa/Documents/cpen321-lab2/twobcdlatcher.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file bcdtodisplay.vhd
-    Info (12022): Found design unit 1: BCDto7Seg-a File: C:/Users/Vlad/Documents/cpen321-lab2/bcdtodisplay.vhd Line: 15
-    Info (12023): Found entity 1: BCDto7Seg File: C:/Users/Vlad/Documents/cpen321-lab2/bcdtodisplay.vhd Line: 5
+    Info (12022): Found design unit 1: BCDto7Seg-a File: C:/Users/comsa/Documents/cpen321-lab2/bcdtodisplay.vhd Line: 15
+    Info (12023): Found entity 1: BCDto7Seg File: C:/Users/comsa/Documents/cpen321-lab2/bcdtodisplay.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file two_bit_adder_subtractor.vhd
-    Info (12022): Found design unit 1: two_bit_adder_subtractor-arch_twobit File: C:/Users/Vlad/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 26
-    Info (12023): Found entity 1: two_bit_adder_subtractor File: C:/Users/Vlad/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 6
+    Info (12022): Found design unit 1: two_bit_adder_subtractor-arch_twobit File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 26
+    Info (12023): Found entity 1: two_bit_adder_subtractor File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 6
 Info (12127): Elaborating entity "part2" for the top level hierarchy
-Info (12128): Elaborating entity "two_bit_bcd_latcher" for hierarchy "two_bit_bcd_latcher:LATCHA" File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 29
-Info (12128): Elaborating entity "BCDto7Seg" for hierarchy "BCDto7Seg:DISPLAY5" File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 31
-Info (12128): Elaborating entity "two_bit_adder_subtractor" for hierarchy "two_bit_adder_subtractor:adder_subtractor" File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 35
-Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(36): signal "add_sub" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Vlad/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 36
-Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(37): signal "num1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Vlad/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 37
-Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(37): signal "num2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Vlad/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 37
-Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(39): signal "num1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Vlad/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 39
-Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(39): signal "num2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Vlad/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 39
-Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(43): signal "add_sub" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Vlad/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 43
-Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(44): signal "num1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Vlad/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 44
-Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(44): signal "num2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Vlad/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 44
-Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(46): signal "num1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Vlad/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 46
-Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(46): signal "num2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Vlad/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 46
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "hex0[0]" is stuck at VCC File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 15
-    Warning (13410): Pin "hex0[1]" is stuck at GND File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 15
-    Warning (13410): Pin "hex0[2]" is stuck at GND File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 15
-    Warning (13410): Pin "hex0[3]" is stuck at GND File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 15
-    Warning (13410): Pin "hex0[4]" is stuck at GND File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 15
-    Warning (13410): Pin "hex0[5]" is stuck at GND File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 15
-    Warning (13410): Pin "hex0[6]" is stuck at GND File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 15
-    Warning (13410): Pin "hex1[0]" is stuck at VCC File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 16
-    Warning (13410): Pin "hex1[1]" is stuck at GND File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 16
-    Warning (13410): Pin "hex1[2]" is stuck at GND File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 16
-    Warning (13410): Pin "hex1[3]" is stuck at GND File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 16
-    Warning (13410): Pin "hex1[4]" is stuck at GND File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 16
-    Warning (13410): Pin "hex1[5]" is stuck at GND File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 16
-    Warning (13410): Pin "hex1[6]" is stuck at GND File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 16
-    Warning (13410): Pin "LED" is stuck at GND File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 21
+Info (12128): Elaborating entity "two_bit_bcd_latcher" for hierarchy "two_bit_bcd_latcher:LATCHA" File: C:/Users/comsa/Documents/cpen321-lab2/part2.vhd Line: 29
+Info (12128): Elaborating entity "BCDto7Seg" for hierarchy "BCDto7Seg:DISPLAY5" File: C:/Users/comsa/Documents/cpen321-lab2/part2.vhd Line: 31
+Info (12128): Elaborating entity "two_bit_adder_subtractor" for hierarchy "two_bit_adder_subtractor:adder_subtractor" File: C:/Users/comsa/Documents/cpen321-lab2/part2.vhd Line: 35
+Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(38): signal "add_sub" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 38
+Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(39): signal "num1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 39
+Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(39): signal "num2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 39
+Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(41): signal "num1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(41): signal "num2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(45): signal "intermediate_num2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 45
+Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(47): signal "intermediate_num1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 47
+Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(48): signal "intermediate_num1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(51): signal "intermediate_num1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 51
+Warning (10492): VHDL Process Statement warning at two_bit_adder_subtractor.vhd(55): signal "intermediate_num2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 55
+Info (278001): Inferred 3 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "two_bit_adder_subtractor:adder_subtractor|Mod0" File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 44
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "two_bit_adder_subtractor:adder_subtractor|Div0" File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 45
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "two_bit_adder_subtractor:adder_subtractor|Mod1" File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 48
+Info (12130): Elaborated megafunction instantiation "two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod0" File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 44
+Info (12133): Instantiated megafunction "two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod0" with the following parameter: File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 44
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_c2m.tdf
+    Info (12023): Found entity 1: lpm_divide_c2m File: C:/Users/comsa/Documents/cpen321-lab2/db/lpm_divide_c2m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_fkh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_fkh File: C:/Users/comsa/Documents/cpen321-lab2/db/sign_div_unsign_fkh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_4te.tdf
+    Info (12023): Found entity 1: alt_u_div_4te File: C:/Users/comsa/Documents/cpen321-lab2/db/alt_u_div_4te.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "two_bit_adder_subtractor:adder_subtractor|lpm_divide:Div0" File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 45
+Info (12133): Instantiated megafunction "two_bit_adder_subtractor:adder_subtractor|lpm_divide:Div0" with the following parameter: File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 45
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_5am.tdf
+    Info (12023): Found entity 1: lpm_divide_5am File: C:/Users/comsa/Documents/cpen321-lab2/db/lpm_divide_5am.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_bkh File: C:/Users/comsa/Documents/cpen321-lab2/db/sign_div_unsign_bkh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_sse.tdf
+    Info (12023): Found entity 1: alt_u_div_sse File: C:/Users/comsa/Documents/cpen321-lab2/db/alt_u_div_sse.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod1" File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 48
+Info (12133): Instantiated megafunction "two_bit_adder_subtractor:adder_subtractor|lpm_divide:Mod1" with the following parameter: File: C:/Users/comsa/Documents/cpen321-lab2/two_bit_adder_subtractor.vhd Line: 48
+    Info (12134): Parameter "LPM_WIDTHN" = "4"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_42m.tdf
+    Info (12023): Found entity 1: lpm_divide_42m File: C:/Users/comsa/Documents/cpen321-lab2/db/lpm_divide_42m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_7kh File: C:/Users/comsa/Documents/cpen321-lab2/db/sign_div_unsign_7kh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kse.tdf
+    Info (12023): Found entity 1: alt_u_div_kse File: C:/Users/comsa/Documents/cpen321-lab2/db/alt_u_div_kse.tdf Line: 23
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "add_sub" File: C:/Users/Vlad/Documents/cpen321-lab2/part2.vhd Line: 13
-Info (21057): Implemented 98 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 275 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 43 output pins
-    Info (21061): Implemented 44 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 4865 megabytes
-    Info: Processing ended: Mon Feb 11 12:13:07 2019
-    Info: Elapsed time: 00:00:17
+    Info (21061): Implemented 221 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 5090 megabytes
+    Info: Processing ended: Mon Feb 11 22:02:24 2019
+    Info: Elapsed time: 00:00:19
     Info: Total CPU time (on all processors): 00:00:35
 
 

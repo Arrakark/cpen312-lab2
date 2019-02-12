@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for part2
-Mon Feb 11 12:13:56 2019
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Mon Feb 11 22:03:40 2019
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
 ---------------------
@@ -60,18 +60,18 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
 applicable license agreement, including, without limitation, 
 that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
+devices manufactured by Altera and sold by Altera or its 
 authorized distributors.  Please refer to the applicable 
 agreement for further details.
 
@@ -80,7 +80,7 @@ agreement for further details.
 +-----------------------------------------------------------------------------+
 ; TimeQuest Timing Analyzer Summary                                           ;
 +-----------------------+-----------------------------------------------------+
-; Quartus Prime Version ; Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Quartus Prime Version ; Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Timing Analyzer       ; TimeQuest                                           ;
 ; Revision Name         ; part2                                               ;
 ; Device Family         ; Cyclone V                                           ;
@@ -91,23 +91,15 @@ agreement for further details.
 +-----------------------+-----------------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.05        ;
-; Maximum used               ; 4           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.8%      ;
-;     Processor 3            ;   1.8%      ;
-;     Processor 4            ;   1.8%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -161,8 +153,8 @@ No paths to report.
 +-------+--------+----------------------------------+
 ; Clock ; Slack  ; End Point TNS                    ;
 +-------+--------+----------------------------------+
-; KEY0  ; -0.538 ; -7.020                           ;
-; KEY1  ; -0.538 ; -6.530                           ;
+; KEY1  ; -0.538 ; -7.086                           ;
+; KEY0  ; -0.538 ; -6.952                           ;
 +-------+--------+----------------------------------+
 
 
@@ -207,8 +199,8 @@ No paths to report.
 +-------+--------+---------------------------------+
 ; Clock ; Slack  ; End Point TNS                   ;
 +-------+--------+---------------------------------+
-; KEY0  ; -0.538 ; -6.659                          ;
-; KEY1  ; -0.538 ; -6.394                          ;
+; KEY1  ; -0.538 ; -6.693                          ;
+; KEY0  ; -0.538 ; -6.651                          ;
 +-------+--------+---------------------------------+
 
 
@@ -247,8 +239,8 @@ No paths to report.
 +-------+--------+----------------------------------+
 ; Clock ; Slack  ; End Point TNS                    ;
 +-------+--------+----------------------------------+
-; KEY0  ; -0.313 ; -2.660                           ;
-; KEY1  ; -0.267 ; -2.175                           ;
+; KEY0  ; -0.314 ; -2.666                           ;
+; KEY1  ; -0.309 ; -2.603                           ;
 +-------+--------+----------------------------------+
 
 
@@ -287,8 +279,8 @@ No paths to report.
 +-------+--------+---------------------------------+
 ; Clock ; Slack  ; End Point TNS                   ;
 +-------+--------+---------------------------------+
-; KEY0  ; -0.294 ; -2.481                          ;
-; KEY1  ; -0.254 ; -2.073                          ;
+; KEY0  ; -0.295 ; -2.482                          ;
+; KEY1  ; -0.291 ; -2.440                          ;
 +-------+--------+---------------------------------+
 
 
@@ -306,9 +298,9 @@ No synchronizer chains to report.
 ; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; -0.538              ;
 ;  KEY0            ; N/A   ; N/A  ; N/A      ; N/A     ; -0.538              ;
 ;  KEY1            ; N/A   ; N/A  ; N/A      ; N/A     ; -0.538              ;
-; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -13.55              ;
-;  KEY0            ; N/A   ; N/A  ; N/A      ; N/A     ; -7.020              ;
-;  KEY1            ; N/A   ; N/A  ; N/A      ; N/A     ; -6.530              ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -14.038             ;
+;  KEY0            ; N/A   ; N/A  ; N/A      ; N/A     ; -6.952              ;
+;  KEY1            ; N/A   ; N/A  ; N/A      ; N/A     ; -7.086              ;
 +------------------+-------+------+----------+---------+---------------------+
 
 
@@ -611,10 +603,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 8     ; 8    ;
-; Unconstrained Input Port Paths  ; 16    ; 16   ;
-; Unconstrained Output Ports      ; 28    ; 28   ;
-; Unconstrained Output Port Paths ; 112   ; 112  ;
+; Unconstrained Input Ports       ; 9     ; 9    ;
+; Unconstrained Input Port Paths  ; 31    ; 31   ;
+; Unconstrained Output Ports      ; 43    ; 43   ;
+; Unconstrained Output Port Paths ; 367   ; 367  ;
 +---------------------------------+-------+------+
 
 
@@ -633,6 +625,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
+; add_sub    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; lsd[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; lsd[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; lsd[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -649,6 +642,21 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+; LED         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; hex2[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; hex2[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; hex2[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -685,6 +693,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
+; add_sub    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; lsd[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; lsd[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; lsd[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -701,6 +710,21 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+; LED         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; hex2[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; hex2[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; hex2[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -737,12 +761,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
-    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Mon Feb 11 12:13:48 2019
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Mon Feb 11 22:03:28 2019
 Info: Command: quartus_sta part2 -c part2
 Info: qsta_default_script.tcl version: #1
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'part2.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -764,8 +787,8 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -0.538
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.538              -7.020 KEY0 
-    Info (332119):    -0.538              -6.530 KEY1 
+    Info (332119):    -0.538              -7.086 KEY1 
+    Info (332119):    -0.538              -6.952 KEY0 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -780,8 +803,8 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -0.538
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.538              -6.659 KEY0 
-    Info (332119):    -0.538              -6.394 KEY1 
+    Info (332119):    -0.538              -6.693 KEY1 
+    Info (332119):    -0.538              -6.651 KEY0 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -792,11 +815,11 @@ Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case minimum pulse width slack is -0.313
+Info (332146): Worst-case minimum pulse width slack is -0.314
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.313              -2.660 KEY0 
-    Info (332119):    -0.267              -2.175 KEY1 
+    Info (332119):    -0.314              -2.666 KEY0 
+    Info (332119):    -0.309              -2.603 KEY1 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332140): No Setup paths to report
@@ -805,17 +828,17 @@ Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case minimum pulse width slack is -0.294
+Info (332146): Worst-case minimum pulse width slack is -0.295
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.294              -2.481 KEY0 
-    Info (332119):    -0.254              -2.073 KEY1 
+    Info (332119):    -0.295              -2.482 KEY0 
+    Info (332119):    -0.291              -2.440 KEY1 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5082 megabytes
-    Info: Processing ended: Mon Feb 11 12:13:56 2019
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Peak virtual memory: 5242 megabytes
+    Info: Processing ended: Mon Feb 11 22:03:40 2019
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:10
 
 

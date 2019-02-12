@@ -25,6 +25,8 @@ end two_bit_adder_subtractor;
 
 architecture arch_twobit of two_bit_adder_subtractor is
 signal intermediate_sum : unsigned (7 downto 0);
+signal intermediate_num2 : unsigned (7 downto 0);
+signal intermediate_num1 : unsigned (7 downto 0);
 signal num1 : unsigned (7 downto 0);
 signal num2 : unsigned (7 downto 0);
 begin
@@ -38,6 +40,21 @@ begin
 	else
 		intermediate_sum <= num1 - num2;
 	end if;
+	
+	intermediate_num2 <= intermediate_sum mod 10;
+	intermediate_num1 <= (intermediate_sum - intermediate_num2) / 10;
+	
+	if (intermediate_num1 >= 10) then
+		msdout <= intermediate_num1(3 downto 0) mod 10;
+		overflow <= '1';
+	else 
+		msdout <= intermediate_num1(3 downto 0);
+		overflow <= '0';
+	end if;
+	
+	lsdout <= intermediate_num2(3 downto 0);
+	
+	
 	
 end process;
 
